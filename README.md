@@ -11,29 +11,25 @@ We will create an interactive dashboard to display TTC subway delay 2019 data. O
 
 1.	Leaflet Map
 	- Map of Toronto and TTC subway stations
-	- Popups (on hover) displaying the name of the subway station, subway line, total number of delays in 2019, and average minimum delay in 2019
-2.	Plotly Line Graph
-	- X-Axis: Time of day (6-9am, 9am-12pm, 12-3pm, 3-6pm, 6-9pm, 9pm-1:30am)
+	- Popups (on hover) displaying the name of the subway station, subway line, total number of delays in 2018, total number of delays in 2019, average minimum delay in 2018, and average minimum delay in 2019
+2.	D3 bar graph
+	- X-Axis1: Time of day 
+	- X-Axis2: Day of week 
 	- Y-Axis1: Average number of subway delays 
-	- Y-Axis2: Average delay time (minutes)
-	- Dropdown filters: Subway line, month, and day of the week
-3.	Plotly Line Graph
-	- X-Axis: Day of week (Mon, Tues, Wed, Thurs, Fri, Sat, and Sun)
-	- Y-Axis1: Average number of subway delays 
-	- Y-Axis2: Average delay time (minutes)
-	- Dropdown filters: Subway line, month, and time of day
+	- Y-Axis2: Average minimum delay (minutes)
+	- Dropdown filters: Subway line and month
+3.	Other Tableau visualizations to be embedded into HTML page - quick facts
+4. 	Machine learning prediction results - predict the probability of delays at a certain time. 
 
 ## **Tools:**
 We will use the following:
-1. HTML/CSS
-2. Flask
-3. JavaScript
-4. Heroku/PostgreSQL
+1. Python
+2. HTML/CSS
+3. Flask
+4. JavaScript
+5. Heroku/PostgreSQL
 
 ## **Data Sources:**
 1.	City of Toronto Open Data - TTC monthly subway delay data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
 2.	Wikipedia (multiple web pages) - TTC subway station coordinates (e.g. Bloor-Yonge station: https://en.wikipedia.org/wiki/Bloor%E2%80%93Yonge_station)
-
-## **Screenshot:**
-![screenshot1.jpg](images/ttc_dashboard_screenshot1.JPG)
-![screenshot2.jpg](images/ttc_dashboard_screenshot2.JPG)
+3. 	TTC Operating Statistics - quick facts: https://www.ttc.ca/About_the_TTC/Operating_Statistics/2018/index.jsp
