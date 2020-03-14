@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TTC_Subway_Delay_Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+  <!-- Leaflet CSS & JS -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+ integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+ crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+ crossorigin=""></script>
+
+<!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+ 
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-12 jumbotron text-center">
+        <h1>TTC_Subway_Delay_Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>   -->   
+    </div>
+    <div class="hero text-center">
+      <h1>TTC Subway Delay Dashboard</h1>
+      <!-- <p>Use the interactive charts below to explore the dataset</p> -->
+	  <br>
+    </div> 
+
+    <br>
+
+    <!-- The div that holds the map -->    
+     <div class="leaflet" id="map"> Leaflet Map</div>
+     
+    <br>
+
+    <!-- The div that holds the 1st graph and filters -->
+    <div class="row">
+      <div class="col-md-3 well">
+          <h5>Subway Line:</h5>
+          <select id="time_subway_filter" onchange="optionChanged(this.value)"></select>
+          <h5>Month:</h5>
+          <select id="time_month_filter" onchange="optionChanged(this.value)"></select>
+          <h5>Day of the Week:</h5>
+          <select id="time_day_filter" onchange="optionChanged(this.value)"></select>
+      </div>
+       
+      <div class="col-md-9">
+        <div id="time"></div>
+      </div>      
+    </div>
+    <br>
+
+    <!-- The div that holds the 2st graph and filters -->
+    <div class="row">
+      <div class="col-md-3 well">
+          <h5>Subway Line:</h5>
+          <select id="day_subway_filter" onchange="optionChanged(this.value)"></select>
+          <h5>Month:</h5>
+          <select id="day_month_filter" onchange="optionChanged(this.value)"></select>
+          <h5>Time of Day:</h5>
+          <select id="day_time_filter" onchange="optionChanged(this.value)"></select>
+      </div>
+         
+      <div class="col-md-9">
+          <div id="day"></div>
+      </div>      
+     </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/config.js"></script>
+  <script src="../static/js/map1.js"></script>
+  <script src="../static/js/time_day_graph.js"></script>
+ 
+</body>
+
+</html>
