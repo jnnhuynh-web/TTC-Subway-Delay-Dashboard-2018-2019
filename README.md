@@ -23,11 +23,12 @@ We will create an interactive dashboard to display TTC subway delay 2018 and 201
 
 ## **Tools:**
 We will use the following:
-1. Python
-2. HTML/CSS
-3. Flask
-4. JavaScript
-5. Heroku/PostgreSQL
+1. Python - Pandas, SQLAlchemy, Flask
+2. AWS PostgreSQL
+3. HTML/CSS
+4. JavaScript - Leaflet, D3
+5. Tableau
+6. Heroku
 
 ## **Data Sources:**
 1.	City of Toronto Open Data - TTC monthly subway delay data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
