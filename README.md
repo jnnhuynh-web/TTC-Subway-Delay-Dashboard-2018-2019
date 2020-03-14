@@ -1,5 +1,4 @@
-# Toronto Transit Commission (TTC) Subway Delays 
-# 2018 and 2019
+# Toronto Transit Commission (TTC) Subway Delays 2018 and 2019
 
 ## **Team Members:**
 - Nadia Iskandar
