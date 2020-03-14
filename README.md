@@ -1,4 +1,4 @@
-# Toronto Transit Commission (TTC) Subway Delays 2019
+# Toronto Transit Commission (TTC) Subway Delays 2018 and 2019
 
 ## **Team Members:**
 - Nadia Iskandar
@@ -7,7 +7,7 @@
 - Jennifer Huynh
 
 ## **Project Description/Outline:**
-We will create an interactive dashboard to display TTC subway delay 2019 data. Our dashboard will contain 3 views:
+We will create an interactive dashboard to display TTC subway delay 2018 and 2019 data. Our dashboard will contain the following views:
 
 1.	Leaflet Map
 	- Map of Toronto and TTC subway stations
