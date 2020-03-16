@@ -42,40 +42,23 @@
      
     <br>
 
-    <!-- The div that holds the 1st graph and filters -->
+    <!-- The div that holds the D3 graph and filters -->
     <div class="row">
       <div class="col-md-3 well">
           <h5>Subway Line:</h5>
-          <select id="time_subway_filter" onchange="optionChanged(this.value)"></select>
+          <select id="subway_filter" onchange="optionChanged(this.value)"></select>
           <h5>Month:</h5>
-          <select id="time_month_filter" onchange="optionChanged(this.value)"></select>
-          <h5>Day of the Week:</h5>
-          <select id="time_day_filter" onchange="optionChanged(this.value)"></select>
+          <select id="month_filter" onchange="optionChanged(this.value)"></select>
       </div>
        
       <div class="col-md-9">
-        <div id="time"></div>
+        <div id="graph"></div>
       </div>      
     </div>
-    <br>
-
-    <!-- The div that holds the 2st graph and filters -->
-    <div class="row">
-      <div class="col-md-3 well">
-          <h5>Subway Line:</h5>
-          <select id="day_subway_filter" onchange="optionChanged(this.value)"></select>
-          <h5>Month:</h5>
-          <select id="day_month_filter" onchange="optionChanged(this.value)"></select>
-          <h5>Time of Day:</h5>
-          <select id="day_time_filter" onchange="optionChanged(this.value)"></select>
-      </div>
-         
-      <div class="col-md-9">
-          <div id="day"></div>
-      </div>      
-     </div>
+    
     </div>
 
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="../static/js/config.js"></script>

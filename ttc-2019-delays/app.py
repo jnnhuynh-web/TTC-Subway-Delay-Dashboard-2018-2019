@@ -13,12 +13,12 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 from flask_sqlalchemy import SQLAlchemy
-
-engine_heroku = create_engine('postgres://omtjgoefxknxjr:4dc783a299806ee57d98e35b67ccfbfc26f71b0f7ef0806de7a83021d71b69a8@ec2-184-72-236-57.compute-1.amazonaws.com:5432/d397mvjlukaah3')
+engine = create_engine('postgres://root:root1234@my-postgres-db.cxwwjsronhkv.ca-central-1.rds.amazonaws.com:5432/postgres')
 Base = automap_base()
-Base.prepare(engine_heroku, reflect=True)
-ttc_subway_2019 = Base.classes.ttc_subway_2019
-station_in_line = Base.classes.station_in_line
+Base.prepare(engine, reflect=True)
+ttc_subway_delay = Base.classes.ttc_subway_detail
+station_in_line = Base.classes.stations_in_line
+
 # create route that renders index.html template
 @app.route("/")
 def home():
@@ -27,31 +27,34 @@ def home():
 # create route to query database and send jsonified results for delay data    
 @app.route("/delay")
 def delay():
-    session=Session(engine_heroku)
+    session=Session(engine)
 
-    sel=[ttc_subway_2019.date, 
-    ttc_subway_2019.time, 
-    ttc_subway_2019.day, 
-    ttc_subway_2019.station,
-    ttc_subway_2019.code,
-    ttc_subway_2019.min_delay,
-    ttc_subway_2019.min_gap,
-    ttc_subway_2019.bound,
-    ttc_subway_2019.line,
-    ttc_subway_2019.vehicle,
-    ttc_subway_2019.code_info,
-    ttc_subway_2019.latitude,
-    ttc_subway_2019.longitude,
-    ttc_subway_2019.line_name,
-    ttc_subway_2019.month,
-    ttc_subway_2019.time_range]
+    sel=[ttc_subway_delay.date, 
+    ttc_subway_delay.time, 
+    ttc_subway_delay.day, 
+    ttc_subway_delay.station,
+    ttc_subway_delay.code,
+    ttc_subway_delay.min_delay,
+    ttc_subway_delay.min_gap,
+    ttc_subway_delay.bound,
+    ttc_subway_delay.line,
+    ttc_subway_delay.vehicle,
+    ttc_subway_delay.code_info,
+    ttc_subway_delay.latitude,
+    ttc_subway_delay.longitude,
+    ttc_subway_delay.line_name,
+    ttc_subway_delay.month,
+    ttc_subway_delay.time_range,
+    ttc_subway_delay.month_number,
+    ttc_subway_delay.hour,
+    ttc_subway_delay.year]
 
     results = session.query(*sel).all()
 
-    ttc_subway_2019_data = []
+    ttc_subway_delay_data = []
 
     for result in results:
-        ttc_subway_2019_data.append(
+        ttc_subway_delay_data.append(
             {"date": result[0],
             "time": result[1],
             "day": result[2],
@@ -67,22 +70,27 @@ def delay():
             "longitude": result[12],
             "line_name": result[13],
             "month": result[14],
-            "time_range": result[15]}
+            "time_range": result[15],
+            "month_number": result[16],
+            "hour": result[17],
+            "year": result[18]}
         )
     session.close()
-    return jsonify(ttc_subway_2019_data)
+    return jsonify(ttc_subway_delay_data)
 
 # # create route to query database and send jsonified results for map data
 @app.route("/map")
 def map():
-    session=Session(engine_heroku)
+    session=Session(engine)
 
     sel=[station_in_line.station,
         station_in_line.latitude,
         station_in_line.longitude,
         station_in_line.line_name,
-        station_in_line.num_delays,
-        station_in_line.avg_delay_time]
+        station_in_line.c2019_avg_delay_time,
+        station_in_line.c2019_num_delays,
+        station_in_line.c2018_avg_delay_time,
+        station_in_line.c2018_num_delays]
 
     results = session.query(*sel).all()
 
@@ -94,8 +102,10 @@ def map():
             "latitude": result[1],
             "longitude": result[2],
             "line_name": result[3],
-            "num_delays": result[4],
-            "avg_delay_time": result[5]
+            "2019_avg_delay_time": result[4],
+            "2019_num_delays": result[5],
+            "2018_avg_delay_time": result[6],
+            "2018_num_delays": result[7]
             }
         )
     session.close()
