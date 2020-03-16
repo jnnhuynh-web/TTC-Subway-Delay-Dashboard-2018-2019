@@ -1,147 +1,166 @@
-// // Define url
-// var url = "/delay";
-
-// // Print data
-// d3.json(url).then(function(data){
-// 	console.log(data);	
-// 	});
-
 // Define url
-var url2 = "/map";
+var url = "/delay";
 
 // Print data
-d3.json(url2).then(function(data){
+d3.json(url).then(function(data){
 	console.log(data);	
 	});
 
-
-// // Define function to calculate average
-// function average(arr){
-//     //Find the sum
-//     var sum = 0;
-//     for(var i in arr) {
-//         sum += arr[i];
-//     }
-//     //Get the length of the array
-// 	var numbersCnt = arr.length;
+// Define function to calculate average
+function average(arr){
+    //Find the sum
+    var sum = 0;
+    for(var i in arr) {
+        sum += arr[i];
+    }
+    //Get the length of the array
+	var numbersCnt = arr.length;
 	
-//     //Return the average / mean
-// 	if (numbersCnt != 0) {
-// 		return (sum / numbersCnt);
-// 	}
-// 	else {
-// 		return 0;
-// 	}
-// };
+    //Return the average / mean
+	if (numbersCnt != 0) {
+		return (sum / numbersCnt);
+	}
+	else {
+		return 0;
+	}
+};
 
-// // Save dropdown menu text in variable
-// var subway_lines = ['All','Yonge University Spadina','Bloor Danforth','Scarborough Rail Transit','Sheppard'];
-// var months = ['All','January','February','March','April','May','June','July','August','September','October','November','December'];
-// var time_groups = ['All','5-9AM','9AM-12PM','12-3PM','3-6PM','6-9PM','9PM-1:30AM'];
-// var days = ['All','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+// Save dropdown menu text in variable
+var subway_lines = ['All','Yonge University Spadina','Bloor Danforth','Scarborough Rail Transit','Sheppard'];
+var years = ['All','2018','2019']
+var months = ['All','January','February','March','April','May','June','July','August','September','October','November','December'];
 
-// 	/* Select dropdown menu and add options to dropdown */
+// Save x-axis labels in variable
+var hours = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
+var days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
 
-// // Select subway_filter dropdown
-// // Add options to dropdown
-// var subway_filter = d3.select("#subway_filter");
-// subway_lines.forEach(subway_line=>subway_filter.append("option").text(subway_line));
+	/* Select dropdown menu and add options to dropdown */
 
-// // Select month_filter dropdown
-// // Add options to dropdown
-// var month_filter = d3.select("#month_filter");
-// months.forEach(month=>month_filter.append("option").text(month));	
+// Select subway_filter dropdown
+// Add options to dropdown
+var subway_filter = d3.select("#subway_filter");
+subway_lines.forEach(subway_line=>subway_filter.append("option").text(subway_line));
 
-// // Create function init
-// function init(){
+// Select year_filter dropdown
+// Add options to dropdown
+var year_filter = d3.select("#year_filter");
+years.forEach(year=>year_filter.append("option").text(year)); 
+
+// Select month_filter dropdown
+// Add options to dropdown
+var month_filter = d3.select("#month_filter");
+months.forEach(month=>month_filter.append("option").text(month));	
+
+// Define svg width and height;
+var svgWidth = 960;
+var svgHeight = 500;
+
+// Define svg margin;
+var margin = {
+  top: 60,
+  right: 60,
+  bottom: 60,
+  left: 60
+};
+
+// Define chart width and height
+var width = svgWidth - margin.left - margin.right;
+var height = svgHeight - margin.top - margin.bottom;
+
+// Create an SVG wrapper, append an SVG group that will hold our chart,
+// and shift the latter by left and top margins.
+var svg = d3
+  .select("#graph")
+  .append("svg")
+  .attr("width", svgWidth)
+  .attr("height", svgHeight);
+
+// Append an SVG group
+var chartGroup = svg.append("g")
+  .attr("transform", `translate(${margin.left}, ${margin.top})`)
+  .classed("chart",true);
+
+// Initial Params
+var chosenXAxis = "time";
+var chosenYAxis = "num_delays";
+
+// Create function init
+function init(){
 	
-// 	// Get data from json file
-// 	d3.json(url).then(function(data){
+	// Get data from json file
+	d3.json(url).then(function(data){
 		
-// 		// Define init dropdown values 
-// 		var init_subway_value = subway_lines[0];
-// 		var init_month_value = months[0];
+		// Define init dropdown values 
+		var init_subway_value = subway_lines[0];
+		var init_year_value = years[0];
+		var init_month_value = months[0];
 		
-// 		// Print data
-// 		// console.log(init_subway_value);
-// 		// console.log(init_month_value);
+		// Print data
+		// console.log(init_subway_value);
+		// console.log(init_year_value);
+		// console.log(init_month_value);
 
-// 			/* Filter data for the graph based on init dropdown values */
+		// Set init_data = data
+		init_data = data
+
+		// 	/* Filter data for the graph based on init dropdown values */
 			
-// 		if (init_subway_value == 'All'){
-// 			var init_data_temp = data;
-// 		}
-// 		else {
-// 			var init_data_temp = data.filter(data=>data.line_name == init_subway_value);
-// 		}
+		// if (init_subway_value == 'All'){
+		// 	var init_data_temp1 = data;
+		// }
+		// else {
+		// 	var init_data_temp1 = data.filter(data=>data.line_name == init_subway_value);
+		// }
 
-// 		if (init_month_value == 'All'){
-// 			var init_data = init_data_temp;
-// 		}
-// 		else {
-// 			var init_data = init_data_temp.filter(data=>data.month == init_month_value);
-// 		}
-		
-// 			/* Group data by time and date groups */
+		// if (init_year_value == 'All'){
+        //  var init_data_temp2 = init_data_temp1;
+        // }
+        // else {
+        //  var init_data_temp2 = init_data_temp1.filter(data=>data.year == init_year_value);
+        // }
 
-// 		// Group data by time groups
-// 		var init_data_group1 = init_data.filter(data=>data.time_range == time_groups[1]);
-// 		var init_data_group2 = init_data.filter(data=>data.time_range == time_groups[2]);
-// 		var init_data_group3 = init_data.filter(data=>data.time_range == time_groups[3]);
-// 		var init_data_group4 = init_data.filter(data=>data.time_range == time_groups[4]);
-// 		var init_data_group5 = init_data.filter(data=>data.time_range == time_groups[5]);
-// 		var init_data_group6 = init_data.filter(data=>data.time_range == time_groups[6]);
+		// if (init_month_value == 'All'){
+		// 	var init_data = init_data_temp2;
+		// }
+		// else {
+		// 	var init_data = init_data_temp2.filter(data=>data.month == init_month_value);
+		// }
+	
+			/* Calculate total number of delays and average min delay by hour and day */	
+
+		// Calculate total number of delays by hour
+		var init_num_delays_by_hour = [];    
+		for (i = 0; i < hours.length; i++) {
+			init_num_delays_by_hour.push(init_data.filter(data=>parseFloat(data.hour) == hours[i]).length);
+		}
+
+		// Calculate average min delay by hour
+		var init_avg_delay_by_hour = []; 
+		for (i = 0; i < hours.length; i++) {
+			init_avg_delay_by_hour.push(average(init_data.filter(data=>parseFloat(data.hour) == hours[i]).map(data=>parseFloat(data.min_delay))));
+		}
 		
-// 		// Group data by day groups
-// 		var init_day_data_group1 = init_day_data.filter(data=>data.day == days[1]);
-// 		var init_day_data_group2 = init_day_data.filter(data=>data.day == days[2]);
-// 		var init_day_data_group3 = init_day_data.filter(data=>data.day == days[3]);
-// 		var init_day_data_group4 = init_day_data.filter(data=>data.day == days[4]);
-// 		var init_day_data_group5 = init_day_data.filter(data=>data.day == days[5]);
-// 		var init_day_data_group6 = init_day_data.filter(data=>data.day == days[6]);
-// 		var init_day_data_group7 = init_day_data.filter(data=>data.day == days[7]);
-		
-// 			/* Calculate total number of delays and average min delay by time and day groups */		
-		
-// 		// Calculate total number of delays for the time graph
-// 		var init_time_graph_num_delays = [];
-// 		init_time_graph_num_delays.push(init_time_data_group1.length);
-// 		init_time_graph_num_delays.push(init_time_data_group2.length);
-// 		init_time_graph_num_delays.push(init_time_data_group3.length);
-// 		init_time_graph_num_delays.push(init_time_data_group4.length);
-// 		init_time_graph_num_delays.push(init_time_data_group5.length);
-// 		init_time_graph_num_delays.push(init_time_data_group6.length);
-		
-// 		// Calculate total number of delays for the day graph
-// 		var init_day_graph_num_delays = [];		
-// 		init_day_graph_num_delays.push(init_day_data_group1.length);
-// 		init_day_graph_num_delays.push(init_day_data_group2.length);
-// 		init_day_graph_num_delays.push(init_day_data_group3.length);
-// 		init_day_graph_num_delays.push(init_day_data_group4.length);
-// 		init_day_graph_num_delays.push(init_day_data_group5.length);
-// 		init_day_graph_num_delays.push(init_day_data_group6.length);
-// 		init_day_graph_num_delays.push(init_day_data_group7.length);
-		
-// 		// Calculate average min delay for the time graph
-// 		var init_time_graph_avg_delay = [];	
-// 		init_time_graph_avg_delay.push(average(init_time_data_group1.map(data=>parseFloat(data.min_delay))));
-// 		init_time_graph_avg_delay.push(average(init_time_data_group2.map(data=>parseFloat(data.min_delay))));
-// 		init_time_graph_avg_delay.push(average(init_time_data_group3.map(data=>parseFloat(data.min_delay))));
-// 		init_time_graph_avg_delay.push(average(init_time_data_group4.map(data=>parseFloat(data.min_delay))));
-// 		init_time_graph_avg_delay.push(average(init_time_data_group5.map(data=>parseFloat(data.min_delay))));
-// 		init_time_graph_avg_delay.push(average(init_time_data_group6.map(data=>parseFloat(data.min_delay))));
-		
-// 		// Calculate average min delay for the day graph
-// 		var init_day_graph_avg_delay = [];	
-// 		init_day_graph_avg_delay.push(average(init_day_data_group1.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group2.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group3.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group4.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group5.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group6.map(data=>parseFloat(data.min_delay))));
-// 		init_day_graph_avg_delay.push(average(init_day_data_group7.map(data=>parseFloat(data.min_delay))));
-						
-// 			/* Create time bar chart */
+		// Calculate total number of delays by day
+		var init_num_delays_by_day = [];	
+		for (i = 0; i < days.length; i++) {
+			init_num_delays_by_day.push(init_data.filter(data=>data.day == days[i]).length);
+		}
+
+		// Calculate average min delay by day
+		var init_avg_delay_by_day = [];	
+		for (i = 0; i < days.length; i++) {
+			init_avg_delay_by_day.push(average(init_data.filter(data=>data.day == days[i]).map(data=>parseFloat(data.min_delay))));
+		}
+
+		console.log(init_num_delays_by_hour);
+		console.log(init_avg_delay_by_hour);
+		console.log(init_num_delays_by_day);
+		console.log(init_avg_delay_by_day);
+
+
+// 		
+
+// 			/* Create line graph */
 		
 // 		// Define trace 1
 // 		var time_trace1 = {
@@ -237,12 +256,12 @@ d3.json(url2).then(function(data){
 // 		// Plot graph
 // 		Plotly.newPlot("day",day_data,day_layout);
 		
-// 	});
+	});
 		
-// };
+};
 
-// // Call function init
-// init();
+// Call function init
+init();
 
 // // Create optionChanged function - Referenced in HTML file
 // function optionChanged(){
