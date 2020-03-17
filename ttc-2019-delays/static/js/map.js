@@ -1,5 +1,7 @@
 
-//setting tile Layers 
+
+// Adding a tile layer (the background map image) to our map
+
 var street = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
@@ -21,42 +23,46 @@ var satellite = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
   accessToken: API_KEY
 })
 
-var layers = {
+
+
+var mymap = L.map("map", {
+  center: [43.7131, -79.3858],
+  zoom: 11,
+  layers:[street,dark,satellite]
+});
+
+var basemaps = {
   Street: street,
   Dark: dark,
   Satellite: satellite
 }
 
-var mymap = L.map("map", {
-  center: [43.7131, -79.3858],
-  zoom: 11,
-  layers:[    
-    layers.Dark,
-    layers.Satellite,
-    layers.Street,
-  ]
-});
+// L.control.layers(basemaps, null).addTo(mymap);
 
-var baselayers = {  
-  "Nightview":layers.Dark,
-  "Satellite":layers.Satellite,
-  "Dayview":layers.Street
-}
+// setting layers for different subway lines
+var line1layer = new L.LayerGroup();
+var line2layer = new L.LayerGroup();
+var line3layer = new L.LayerGroup();
+var line4layer = new L.LayerGroup();
 
-L.control.layers(baselayers, null).addTo(mymap);
 
-// // setting variable to hold the layers
-// var lines1 = [];
-// var lines2 = [];
-// var lines3 = [];
-// var lines4 = [];
+
+var overlayers ={
+  Line1: line1layer,
+  Line2: line2layer,
+  Line3: line3layer,
+  Line4: line4layer,
+};
+
+
+L.control.layers(basemaps, overlayers).addTo(mymap)
 
 // load data 
 var urlMap ="/map";
 // var urlMap ="../data/station_in_line.csv";
 
 d3.json(urlMap).then(function(data){
-// // console.log(data);	
+console.log(data);	
 
 // //line1
 var line1coordinates=[];
@@ -70,10 +76,10 @@ for (var  a=0; a<38;  a++){
       radius: 60
     }).bindPopup("<h3>" + data[a].station +
     "</h3><hr><p>Number of Delay Happened: " + data[a].num_delays + 
-    " </p><hr><p> Avg Delay Time: " + data[a].avg_delay_time + " minutes </p>").addTo(mymap);
+    " </p><hr><p> Avg Delay Time: " + data[a].avg_delay_time + " minutes </p>").addTo(line1layer);
   
 // console.log(data[a].station);
-// lines1.push(circle1);
+
 };
 console.log(line1coordinates);
 
@@ -82,10 +88,10 @@ var line1 = L.polyline(line1coordinates, {
 color: "yellow",
 weight: 1,
 stroke: true
-}).addTo(mymap);
-// lines1.push(line1);
+}).addTo(line1layer);
 
 
+line1layer.addTo(mymap);
 
 //line 2
 var line2coordinates =[];
@@ -99,8 +105,7 @@ for (var i=38; i <69; i++) {
       fillOpacity: 0.7,
       radius: 60
     }).bindPopup("<h3>" + data[i].station + "</h3><hr><p>TNumber of Delay Happened:" + data[i].num_delays + 
-   " minutes</p><hr><p> Avg Delay Time: " + data[i].avg_delay_time + " minutes</p>").addTo(mymap); 
-
+   " minutes</p><hr><p> Avg Delay Time: " + data[i].avg_delay_time + " minutes</p>").addTo(line2layer); 
 
 
 };
@@ -109,10 +114,10 @@ var line2 = L.polyline(line2coordinates, {
 color: "green",
 weight: 1,
 stroke: true
-}).addTo(mymap);
+}).addTo(line2layer);
 
 
-
+line2layer.addTo(mymap)
 //line3
 var line3coordinates=[];
 for (var j =69; j <75; j ++){
@@ -125,7 +130,7 @@ for (var j =69; j <75; j ++){
       radius: 60
     }).bindPopup("<h3>" + data[j].station +
     "</h3><hr><p>Number of Delay Happened: " + data[j].num_delays + 
-    "</p><hr><p> Avg Delay Time: " + data[j].avg_delay_time + " minutes</p>").addTo(mymap);
+    "</p><hr><p> Avg Delay Time: " + data[j].avg_delay_time + " minutes</p>").addTo(line3layer);
   
   };
 
@@ -133,8 +138,8 @@ for (var j =69; j <75; j ++){
       color: "blue",
       weight: 1,
       stroke: true
-      }).addTo(mymap);
-
+      }).addTo(line3layer);
+line3layer.addTo(mymap)
   
 
 //line4
@@ -149,8 +154,9 @@ for (var k =75; k<80;  k++){
       radius: 60
     }).bindPopup("<h3>" + data[k].station +
     "</h3><hr><p>Number of Delay Happened: " + data[k].num_delays + 
-    " </p><hr><p> Avg Delay Time: " + data[k].avg_delay_time + " minutes</p>").addTo(mymap);
+    " </p><hr><p> Avg Delay Time: " + data[k].avg_delay_time + " minutes</p>").addTo(line4layer);
 
+  
 };
 
 
@@ -158,6 +164,8 @@ var line4 = L.polyline(line4coordinates, {
 color: "purple",
 weight: 1,
 stroke: true
-}).addTo(mymap);
+}).addTo(line4layer);
+line4layer.addTo(mymap)
 
 });
+
