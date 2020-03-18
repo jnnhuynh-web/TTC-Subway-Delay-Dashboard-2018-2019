@@ -98,71 +98,71 @@ else if (chosenXAxis === "day" & chosenYAxis === "avg_delay") {
     var chosenYData = "avg_delay_by_day";
     }
 
-// function used for updating x-scale var upon click on axis label
-function xScale(delayData, chosenXAxis) {
-// create scales
-var xBandScale = d3.scaleBand()
-    .domain(delayData[chosenXAxis])
-    .range([0, width]);
+// // function used for updating x-scale var upon click on axis label
+// function xScale(delayData, chosenXAxis) {
+// // create scales
+// var xBandScale = d3.scaleBand()
+//     .domain(delayData[chosenXAxis])
+//     .range([0, width]);
 
-return xBandScale;
-}
+// return xBandScale;
+// }
 
-// function used for updating xAxis var upon click on axis label
-function renderXAxes(newXScale, xAxis) {
-var bottomAxis = d3.axisBottom(newXScale);
+// // function used for updating xAxis var upon click on axis label
+// function renderXAxes(newXScale, xAxis) {
+// var bottomAxis = d3.axisBottom(newXScale);
 
-xAxis.transition()
-    .duration(1000)
-    .call(bottomAxis);
+// xAxis.transition()
+//     .duration(1000)
+//     .call(bottomAxis);
 
-return xAxis;
-}
+// return xAxis;
+// }
 
-// function used for updating circles group with a transition to
-// new circles
-function renderXCircles(circlesGroup, newXScale, chosenXaxis) {
+// // function used for updating circles group with a transition to
+// // new circles
+// function renderXCircles(circlesGroup, newXScale, chosenXaxis) {
 
-circlesGroup.transition()
-    .duration(1000)
-    .attr("cx", d => newXScale(d[chosenXAxis]));
+// circlesGroup.transition()
+//     .duration(1000)
+//     .attr("cx", d => newXScale(d[chosenXAxis]));
 
-return circlesGroup;
-}
+// return circlesGroup;
+// }
 
-// function used for updating y-scale var upon click on axis label
-function yScale(delayData, chosenYData) {
-// create scales
-var yLinearScale = d3.scaleLinear()
-    .domain([d3.min(delayData, d => d[chosenYData]) * 0.8, 
-    d3.max(delayData, d => d[chosenYData]) * 1.05
-    ])
-    .range([height, 0]);
+// // function used for updating y-scale var upon click on axis label
+// function yScale(delayData, chosenYData) {
+// // create scales
+// var yLinearScale = d3.scaleLinear()
+//     .domain([d3.min(delayData, d => d[chosenYData]) * 0.8, 
+//     d3.max(delayData, d => d[chosenYData]) * 1.05
+//     ])
+//     .range([height, 0]);
 
-return yLinearScale;
-}
+// return yLinearScale;
+// }
 
-// function used for updating yAxis var upon click on axis label
-function renderYAxes(newYScale, yAxis) {
-var leftAxis = d3.axisLeft(newYScale);
+// // function used for updating yAxis var upon click on axis label
+// function renderYAxes(newYScale, yAxis) {
+// var leftAxis = d3.axisLeft(newYScale);
 
-yAxis.transition()
-    .duration(1000)
-    .call(leftAxis);
+// yAxis.transition()
+//     .duration(1000)
+//     .call(leftAxis);
 
-return yAxis;
-}
+// return yAxis;
+// }
 
-// function used for updating circles group with a transition to
-// new circles
-function renderYCircles(circlesGroup, newYScale, chosenYData) {
+// // function used for updating circles group with a transition to
+// // new circles
+// function renderYCircles(circlesGroup, newYScale, chosenYData) {
 
-circlesGroup.transition()
-    .duration(1000)
-    .attr("cy", d => newYScale(d[chosenYData]));
+// circlesGroup.transition()
+//     .duration(1000)
+//     .attr("cy", d => newYScale(d[chosenYData]));
 
-return circlesGroup;
-}
+// return circlesGroup;
+// }
 
 //   // function used for updating circles text with a transition to
 //   // new circles
@@ -250,89 +250,148 @@ function init(){
 		}
 
         var delayData = {
-            "hour": hours,
-            "day": days,
-            "num_delays_by_hour": init_num_delays_by_hour,
-            "avg_delay_by_hour": init_avg_delay_by_hour,
-            "num_delays_by_day": init_num_delays_by_day,
-            "avg_delay_by_day": init_avg_delay_by_day
+            hour: hours,
+            day: days,
+            num_delays_by_hour: init_num_delays_by_hour,
+            avg_delay_by_hour: init_avg_delay_by_hour,
+            num_delays_by_day: init_num_delays_by_day,
+            avg_delay_by_day: init_avg_delay_by_day
         }
 
         // Print calculated values
         console.log(delayData);
-  
 
-    // x xBandScale function 
-    var xBandScale = xScale(delayData, chosenXAxis);
+        console.log(delayData.hour);
+        console.log(delayData.num_delays_by_hour);
+
+        console.log(chosenXAxis);
+        console.log(chosenYAxis);
+        console.log(chosenYData);
+
+        console.log(delayData[chosenXAxis]);
+        console.log(delayData[chosenYData]);
+
+        console.log(delayData["hour"]);
+        console.log(delayData["num_delays_by_hour"]);
+        
+        // Configure a time scale with a range between 0 and the chartWidth
+        // Set the domain for the xTimeScale function
+        // d3.extent returns the an array containing the min and max values for the property specified
+        var xBandScale = d3.scaleBand()
+            .domain(delayData[chosenXAxis])
+            .range([0, width]);
+
+        // Configure a linear scale with a range between the chartHeight and 0
+        // Set the domain for the xLinearScale function
+        var yLinearScale = d3.scaleLinear()
+        .range([height, 0])
+        .domain([0, d3.max(delayData[chosenYData])]);
+
+        // Create two new functions passing the scales in as arguments
+        // These will be used to create the chart's axes
+        var bottomAxis = d3.axisBottom(xBandScale);
+        var leftAxis = d3.axisLeft(yLinearScale);
+
+        // Configure a drawLine function which will use our scales to plot the line's points
+        var drawLine = d3
+        .line()
+        .x(xBandScale(delayData[chosenXAxis]))
+        .y(yLinearScale(delayData[chosenYData]));
+
+        // Append an SVG path and plot its points using the line function
+        chartGroup.append("path")
+        // The drawLine function returns the instructions for creating the line for delayData
+        .attr("d", drawLine(delayData))
+        .classed("line", true);
+
+        // Append an SVG group element to the SVG area, create the left axis inside of it
+        chartGroup.append("g")
+        .classed("axis", true)
+        .call(leftAxis);
+
+        // Append an SVG group element to the SVG area, create the bottom axis inside of it
+        // Translate the bottom axis to the bottom of the page
+        chartGroup.append("g")
+        .classed("axis", true)
+        .attr("transform", "translate(0, " + height + ")")
+        .call(bottomAxis);
+
+
+
+
+
+
+  //   // x xBandScale function 
+  //   var xBandScale = xScale(delayData, chosenXAxis);
   
-    // yLinearScale function 
-    var yLinearScale = yScale(delayData, chosenYAxis);
+  //   // yLinearScale function 
+  //   var yLinearScale = yScale(delayData, chosenYData);
   
-    // Create initial axis functions
-    var bottomAxis = d3.axisBottom(xBandScale);
-    var leftAxis = d3.axisLeft(yLinearScale);
+  //   // Create initial axis functions
+  //   var bottomAxis = d3.axisBottom(xBandScale);
+  //   var leftAxis = d3.axisLeft(yLinearScale);
   
-    // append x axis
-    var xAxis = chartGroup.append("g")
-      .attr("transform", `translate(0, ${height})`)
-      .call(bottomAxis);
+  //   // append x axis
+  //   var xAxis = chartGroup.append("g")
+  //     .attr("transform", `translate(0, ${height})`)
+  //     .call(bottomAxis);
   
-    // append y axis
-    var yAxis = chartGroup.append("g")
-      .call(leftAxis);
+  //   // append y axis
+  //   var yAxis = chartGroup.append("g")
+  //     .call(leftAxis);
   
-    // bind data 
-    var circles = chartGroup.selectAll(null)
-      .data(delayData)
-      .enter()
-      .append("g")
-      .classed("stateCircle", true);
+  //   // bind data 
+  //   var circles = chartGroup.selectAll(null)
+  //     .data(delayData)
+  //     .enter()
+  //     .append("g")
+  //     .classed("stateCircle", true);
   
-   // append initial circles
-    var circlesGroup = circles.append("circle")
-      .attr("cx", d => xBandScale(d[chosenXAxis]))
-      .attr("cy", d => yLinearScale(d[chosenYData]))
-      .attr("r", 2)
+  //  // append initial circles
+  //   var circlesGroup = circles.append("circle")
+  //     .attr("cx", d => xBandScale(d[chosenXAxis]))
+  //     .attr("cy", d => yLinearScale(d[chosenYData]))
+  //     .attr("r", 2)
 
   
-    // Create group for 2 x- axis labels
-    var xlabelsGroup = chartGroup.append("g")
-      .attr("transform", `translate(${width / 2}, ${height + 20})`);
+  //   // Create group for 2 x- axis labels
+  //   var xlabelsGroup = chartGroup.append("g")
+  //     .attr("transform", `translate(${width / 2}, ${height + 20})`);
   
-    var hourLabel = xlabelsGroup.append("text")
-      .attr("y", 20)
-      .attr("x", 0)
-      .attr("value", "hour") // value to grab for event listener
-      .classed("aText active", true)
-      .text("Hour");
+  //   var hourLabel = xlabelsGroup.append("text")
+  //     .attr("y", 20)
+  //     .attr("x", 0)
+  //     .attr("value", "hour") // value to grab for event listener
+  //     .classed("aText active", true)
+  //     .text("Hour");
   
-    var dayLabel = xlabelsGroup.append("text")
-      .attr("y", 40)
-      .attr("x", 0)
-      .attr("value", "day") // value to grab for event listener
-      .classed("aText inactive", true)
-      .text("Day");
+  //   var dayLabel = xlabelsGroup.append("text")
+  //     .attr("y", 40)
+  //     .attr("x", 0)
+  //     .attr("value", "day") // value to grab for event listener
+  //     .classed("aText inactive", true)
+  //     .text("Day");
 
   
-    // Create group for 2 y-axis labels
-    var ylabelsGroup = chartGroup.append("g")
-      .attr("transform", "rotate(-90)");
+  //   // Create group for 2 y-axis labels
+  //   var ylabelsGroup = chartGroup.append("g")
+  //     .attr("transform", "rotate(-90)");
       
-    var num_delaysLabel = ylabelsGroup.append("text")
-      .attr("y", 0 - margin.left + 50)
-      .attr("x", 0 - (height / 2))
-      .attr("dy", "1em")
-      .attr("value", "num_delays") // value to grab for event listener
-      .classed("aText active", true)
-      .text("Number of Delays");
+  //   var num_delaysLabel = ylabelsGroup.append("text")
+  //     .attr("y", 0 - margin.left + 50)
+  //     .attr("x", 0 - (height / 2))
+  //     .attr("dy", "1em")
+  //     .attr("value", "num_delays") // value to grab for event listener
+  //     .classed("aText active", true)
+  //     .text("Number of Delays");
     
-    var avg_delayLabel = ylabelsGroup.append("text")
-      .attr("y", 0 - margin.left + 30)
-      .attr("x", 0 - (height / 2))
-      .attr("dy", "1em")
-      .attr("value", "avg_delay") // value to grab for event listener
-      .classed("aText inactive", true)
-      .text("Average Delay (Minutes)");
+  //   var avg_delayLabel = ylabelsGroup.append("text")
+  //     .attr("y", 0 - margin.left + 30)
+  //     .attr("x", 0 - (height / 2))
+  //     .attr("dy", "1em")
+  //     .attr("value", "avg_delay") // value to grab for event listener
+  //     .classed("aText inactive", true)
+  //     .text("Average Delay (Minutes)");
 
       
 //     // updateToolTip function 
