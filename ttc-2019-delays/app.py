@@ -102,10 +102,10 @@ def map():
             "latitude": result[1],
             "longitude": result[2],
             "line_name": result[3],
-            "2019_avg_delay_time": result[4],
-            "2019_num_delays": result[5],
-            "2018_avg_delay_time": result[6],
-            "2018_num_delays": result[7]
+            "avg_delay_time_2019": result[4],
+            "num_delays_2019": result[5],
+            "avg_delay_time_2018": result[6],
+            "num_delays_2018": result[7]
             }
         )
     session.close()
