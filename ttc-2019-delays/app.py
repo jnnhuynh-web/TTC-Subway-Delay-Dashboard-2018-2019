@@ -17,7 +17,7 @@ engine = create_engine('postgres://root:root1234@my-postgres-db.cxwwjsronhkv.ca-
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 ttc_subway_delay = Base.classes.ttc_subway_detail
-station_in_line = Base.classes.stations_in_line_2018_2019
+station_in_line = Base.classes.stations_in_line
 
 # create route that renders index.html template
 @app.route("/")
