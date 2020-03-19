@@ -87,10 +87,10 @@ def map():
         station_in_line.latitude,
         station_in_line.longitude,
         station_in_line.line_name,
-        station_in_line.c2019_avg_delay_time,
-        station_in_line.c2019_num_delays,
-        station_in_line.c2018_avg_delay_time,
-        station_in_line.c2018_num_delays]
+        station_in_line.avg_delay_time_2019,
+        station_in_line.num_delays_2019,
+        station_in_line.avg_delay_time_2018,
+        station_in_line.num_delays_2018]
 
     results = session.query(*sel).all()
 
