@@ -255,3 +255,25 @@ select {
     opacity: 1;
   }
 }
+
+
+@media (max-width: 768px) {
+  #mainmenu {
+   background-color:#17a2b8;
+   color: white;
+  }
+  
+  #LatButton{
+    background-color:white;
+    color: #17a2b8;
+  }
+
+  #navbar9{
+    color:white;
+  }
+  
+  .nav-item{
+    color:white;
+  }
+
+}
