@@ -21,7 +21,30 @@
 </head>
 
 <body>
- 
+  <nav class="navbar navbar-expand-md navbar-light" id="mainmenu">
+    <div class="container">
+        <a href="#"><button type="button" class="btn btn-lg" id="LatButton"> Latitude </button></a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plot </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Max Temperature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
   <div class="container">
     <div class="row">
       <!-- <div class="col-md-12 jumbotron text-center">
@@ -41,6 +64,26 @@
      <div class="leaflet" id="map"> Leaflet Map</div>
      
     <br>
+
+    <div class='tableauPlaceholder' id='viz1584493264434' style='position: relative'>
+      <noscript>
+          <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TorontoTransitCommissionAnalysis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='TorontoTransitCommissionAnalysis&#47;Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TorontoTransitCommissionAnalysis&#47;Dashboard1&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+      </object>
+  </div>
 
     <!-- The div that holds the D3 graph and filters -->
     <div class="row">
@@ -65,6 +108,24 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="../static/js/config.js"></script>
   <script src="../static/js/map.js"></script>
+  
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1584493264434');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1550px';
+        vizElement.style.height = '4027px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '1550px';
+        vizElement.style.height = '4027px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '3927px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
   <!-- <script src="../static/js/graph.js"></script> -->
  
 </body>
