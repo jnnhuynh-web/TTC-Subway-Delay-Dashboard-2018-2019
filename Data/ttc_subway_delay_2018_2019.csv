@@ -7325,7 +7325,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 7324,2018-01-30,8:00,Tuesday,WARDEN STATION,PUTIS,3,5,E,BD,5061,Ice / Snow Related Problems,43.711389,-79.279722,Bloor Danforth,January,5-9AM,1,8,2018
 7325,2018-01-30,8:04,Tuesday,DAVISVILLE STATION,PUTIS,5,8,N,YU,5986,Ice / Snow Related Problems,43.697778,-79.397222,Yonge University Spadina,January,5-9AM,1,8,2018
 7326,2018-01-30,8:18,Tuesday,MUSEUM STATION,TUSC,21,25,S,YU,5906,Operator Overspeeding,43.667222,-79.393611,Yonge University Spadina,January,5-9AM,1,8,2018
-7327,2018-01-30,8:28,Tuesday,MUSEUM STATION,MUIR,10,13,5,YU,0,Injured or ill Customer (On Train) - Medical Aid Refused,43.667222,-79.393611,Yonge University Spadina,January,5-9AM,1,8,2018
+7327,2018-01-30,8:28,Tuesday,MUSEUM STATION,MUIR,10,13,S,YU,0,Injured or ill Customer (On Train) - Medical Aid Refused,43.667222,-79.393611,Yonge University Spadina,January,5-9AM,1,8,2018
 7328,2018-01-30,8:33,Tuesday,YONGE BLOOR BD STATION,MUPAA,3,5,W,BD,5213,Passenger Assistance Alarm Activated - No Trouble Found,43.67111,-79.38583,Bloor Danforth,January,5-9AM,1,8,2018
 7329,2018-01-30,8:39,Tuesday,MUSEUM STATION,MUIR,13,15,S,YU,5776,Injured or ill Customer (On Train) - Medical Aid Refused,43.667222,-79.393611,Yonge University Spadina,January,5-9AM,1,8,2018
 7330,2018-01-30,8:52,Tuesday,WARDEN STATION,EUO,7,9,W,BD,5013,RC&S Other,43.711389,-79.279722,Bloor Danforth,January,5-9AM,1,8,2018
