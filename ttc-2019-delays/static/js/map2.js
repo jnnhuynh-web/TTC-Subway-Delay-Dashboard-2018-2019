@@ -58,8 +58,8 @@ var overlayers ={
 L.control.layers(basemaps, overlayers).addTo(mymap)
 
 // load data 
-//var urlMap ="/map";
-var urlMap ="../data/station_in_line_2018_2019.csv";
+var urlMap ="/map";
+//var urlMap ="../data/station_in_line_2018_2019.csv";
 
 d3.json(urlMap).then(function(data){
 console.log(data);	
