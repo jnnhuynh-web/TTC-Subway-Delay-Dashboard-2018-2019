@@ -1,4 +1,4 @@
-,station,latitude,longitude,line_name,avg_delay_time_2019,num_delays_2019,id, avg_delay_time_2018,num_delays_2018
+,station,latitude,longitude,line_name,avg_delay_time_2019,num_delays_2019,id,avg_delay_time_2018,num_delays_2018
 0,VAUGHAN MC STATION,43.794167,-79.5275,Yonge University Spadina,4.92,241,1,5.48,250
 1,HIGHWAY 407 STATION,43.783889,-79.523056,Yonge University Spadina,6.13,24,2,9.58,19
 2,PIONEER VILLAGE STATIO,43.776944,-79.509444,Yonge University Spadina,14.05,20,3,6.21,24
