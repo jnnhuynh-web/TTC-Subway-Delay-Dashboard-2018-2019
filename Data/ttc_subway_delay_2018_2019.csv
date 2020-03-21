@@ -215,7 +215,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 214,2019-01-13,14:54,Sunday,KENNEDY SRT STATION,MRO,10,16,N,SRT,3013,Miscellaneous Other,43.7325,-79.263611,Scarborough Rail Transit,January,12-3PM,1,14,2019
 215,2019-01-13,15:09,Sunday,SHEPPARD WEST STATION,MUSAN,4,8,N,YU,5941,Unsanitary Vehicle,43.749444,-79.461944,Yonge University Spadina,January,3-6PM,1,15,2019
 216,2019-01-13,16:14,Sunday,WELLESLEY STATION,SUDP,7,11,S,YU,6036,Disorderly Patron,43.665278,-79.383889,Yonge University Spadina,January,3-6PM,1,16,2019
-217,2019-01-13,16:24,Sunday,YORK UNIVERSITY STATIO,MUDD,8,12,S,YU,5951,Door Problems - Debris Related,43.774167,-79.499722,Yonge University Spadina,January,3-6PM,1,16,2019
+217,2019-01-13,16:24,Sunday,YORK UNIVERSITY STATION,MUDD,8,12,S,YU,5951,Door Problems - Debris Related,43.774167,-79.499722,Yonge University Spadina,January,3-6PM,1,16,2019
 218,2019-01-13,16:38,Sunday,COXWELL STATION,SUDP,3,7,E,BD,5245,Disorderly Patron,43.684167,-79.323056,Bloor Danforth,January,3-6PM,1,16,2019
 219,2019-01-13,16:40,Sunday,UNION STATION,MUI,5,9,S,YU,5926,Injured or ill Customer (On Train) - Transported,43.645556,-79.380556,Yonge University Spadina,January,3-6PM,1,16,2019
 220,2019-01-13,21:30,Sunday,SHEPPARD-YONGE SHP STATION,TUO,3,8,E,SHP,6176,Transportation Department - Other,#N/A,#N/A,Sheppard,January,9PM-1:30AM,1,21,2019
@@ -248,7 +248,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 247,2019-01-15,15:33,Tuesday,ROYAL YORK STATION,MUIR,37,40,W,BD,5014,Injured or ill Customer (On Train) - Medical Aid Refused,43.648056,-79.511389,Bloor Danforth,January,3-6PM,1,15,2019
 248,2019-01-15,15:54,Tuesday,ST GEORGE BD STATION,PUSI,6,9,W,BD,5049,Signals or Related Components Failure ,43.668056, -79.399722,Bloor Danforth,January,3-6PM,1,15,2019
 249,2019-01-15,16:12,Tuesday,MCCOWAN STATION,ERCO,5,10,N,SRT,3013,Couplers,43.774917,-79.251667,Scarborough Rail Transit,January,3-6PM,1,16,2019
-250,2019-01-15,16:18,Tuesday,YORK UNIVERSITY STATIO,PUATC,4,9,S,YU,5791,ATC Signals Other,43.774167,-79.499722,Yonge University Spadina,January,3-6PM,1,16,2019
+250,2019-01-15,16:18,Tuesday,YORK UNIVERSITY STATION,PUATC,4,9,S,YU,5791,ATC Signals Other,43.774167,-79.499722,Yonge University Spadina,January,3-6PM,1,16,2019
 251,2019-01-15,17:21,Tuesday,DONLANDS STATION,MUIR,4,6,W,BD,5338,Injured or ill Customer (On Train) - Medical Aid Refused,43.681111,-79.337778,Bloor Danforth,January,3-6PM,1,17,2019
 252,2019-01-15,18:12,Tuesday,DUPONT STATION,TUO,4,6,S,YU,5416,Transportation Department - Other,43.674584,-79.40683,Yonge University Spadina,January,6-9PM,1,18,2019
 253,2019-01-15,19:13,Tuesday,DAVISVILLE STATION,SUAP,5,7,S,YU,5571,Assault / Patron Involved,43.697778,-79.397222,Yonge University Spadina,January,6-9PM,1,19,2019
@@ -1244,7 +1244,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 1243,2019-03-03,15:30,Sunday,KIPLING STATION,EUPI,4,8,E,BD,5141,Propulsion System,43.637222,-79.536111,Bloor Danforth,March,3-6PM,3,15,2019
 1244,2019-03-03,16:08,Sunday,COXWELL STATION,MUI,3,8,W,BD,5314,Injured or ill Customer (On Train) - Transported,43.684167,-79.323056,Bloor Danforth,March,3-6PM,3,16,2019
 1245,2019-03-03,16:17,Sunday,DAVISVILLE STATION,MUI,4,8,S,YU,5551,Injured or ill Customer (On Train) - Transported,43.697778,-79.397222,Yonge University Spadina,March,3-6PM,3,16,2019
-1246,2019-03-03,18:09,Sunday,YORK UNIVERSITY STATIO,MUI,6,10,N,YU,6031,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,March,6-9PM,3,18,2019
+1246,2019-03-03,18:09,Sunday,YORK UNIVERSITY STATION,MUI,6,10,N,YU,6031,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,March,6-9PM,3,18,2019
 1247,2019-03-03,18:41,Sunday,NORTH YORK CTR STATION,EUDO,4,8,S,YU,5621,Door Problems - Faulty Equipment,43.768333,-79.412778,Yonge University Spadina,March,6-9PM,3,18,2019
 1248,2019-03-03,19:30,Sunday,DONLANDS STATION,SUDP,3,7,E,BD,5146,Disorderly Patron,43.681111,-79.337778,Bloor Danforth,March,6-9PM,3,19,2019
 1249,2019-03-03,21:04,Sunday,VAUGHAN MC STATION,SUCOL,12,17,N,YU,5951,Collector Booth Alarm Activated,43.794167,-79.5275,Yonge University Spadina,March,9PM-1:30AM,3,21,2019
@@ -1339,7 +1339,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 1338,2019-03-08,19:03,Friday,HIGH PARK STATION,MUIR,9,11,E,BD,5280,Injured or ill Customer (On Train) - Medical Aid Refused,43.653889,-79.466667,Bloor Danforth,March,6-9PM,3,19,2019
 1339,2019-03-08,20:52,Friday,FINCH STATION,EUNT,8,11,S,YU,5571,Equipment - No Trouble Found,43.780556,-79.414722,Yonge University Spadina,March,6-9PM,3,20,2019
 1340,2019-03-08,21:09,Friday,HIGH PARK STATION,MUIR,9,11,W,BD,5345,Injured or ill Customer (On Train) - Medical Aid Refused,43.653889,-79.466667,Bloor Danforth,March,9PM-1:30AM,3,21,2019
-1341,2019-03-08,21:53,Friday,YORK UNIVERSITY STATIO,SUDP,3,6,N,YU,6016,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,March,9PM-1:30AM,3,21,2019
+1341,2019-03-08,21:53,Friday,YORK UNIVERSITY STATION,SUDP,3,6,N,YU,6016,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,March,9PM-1:30AM,3,21,2019
 1342,2019-03-09,0:05,Saturday,ST GEORGE YUS STATION,TUMVS,8,13,S,YU,5881,Operator Violated Signal,43.66806,-79.39972,Yonge University Spadina,March,9PM-1:30AM,3,0,2019
 1343,2019-03-09,8:39,Saturday,LAWRENCE STATION,MUSC,3,8,S,YU,5486,Miscellaneous Speed Control,43.725,-79.402222,Yonge University Spadina,March,5-9AM,3,8,2019
 1344,2019-03-09,10:14,Saturday,OSSINGTON STATION,PUTIJ,5,9,E,BD,5304,Insulated Joint Related Problem,43.662222,-79.426667,Bloor Danforth,March,9AM-12PM,3,10,2019
@@ -1589,7 +1589,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 1588,2019-03-23,16:15,Saturday,DUNDAS WEST STATION,SUAP,3,8,W,BD,5284,Assault / Patron Involved,43.656944,-79.452917,Bloor Danforth,March,3-6PM,3,16,2019
 1589,2019-03-23,17:57,Saturday,CHESTER STATION,MUIR,13,18,W,BD,5001,Injured or ill Customer (On Train) - Medical Aid Refused,43.678333,-79.3525,Bloor Danforth,March,3-6PM,3,17,2019
 1590,2019-03-23,19:08,Saturday,MUSEUM STATION,TUOS,5,10,S,YU,5976,Operator Overshot Platform,43.667222,-79.393611,Yonge University Spadina,March,6-9PM,3,19,2019
-1591,2019-03-23,20:04,Saturday,YORK UNIVERSITY STATIO,SUO,5,10,N,YU,5851,Passenger Other,43.774167,-79.499722,Yonge University Spadina,March,6-9PM,3,20,2019
+1591,2019-03-23,20:04,Saturday,YORK UNIVERSITY STATION,SUO,5,10,N,YU,5851,Passenger Other,43.774167,-79.499722,Yonge University Spadina,March,6-9PM,3,20,2019
 1592,2019-03-23,22:00,Saturday,ST GEORGE BD STATION,MUDD,4,8,E,BD,5101,Door Problems - Debris Related,43.668056, -79.399722,Bloor Danforth,March,9PM-1:30AM,3,22,2019
 1593,2019-03-23,22:43,Saturday,BAY STATION,MUI,12,16,W,BD,5319,Injured or ill Customer (On Train) - Transported,43.670278,-79.39,Bloor Danforth,March,9PM-1:30AM,3,22,2019
 1594,2019-03-23,23:23,Saturday,KEELE STATION,EUNT,3,7,E,BD,5270,Equipment - No Trouble Found,43.655556,-79.459722,Bloor Danforth,March,9PM-1:30AM,3,23,2019
@@ -2148,7 +2148,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 2147,2019-04-23,12:12,Tuesday,DUNDAS STATION,MUD,5,8,N,YU,5716,Door Problems - Passenger Related,43.656389,-79.380833,Yonge University Spadina,April,12-3PM,4,12,2019
 2148,2019-04-23,12:28,Tuesday,FINCH STATION,MUTO,5,8,S,YU,5681,Misc. Transportation Other - Employee Non-Chargeable,43.780556,-79.414722,Yonge University Spadina,April,12-3PM,4,12,2019
 2149,2019-04-23,13:03,Tuesday,GREENWOOD STATION,SUO,8,11,E,BD,5062,Passenger Other,43.6825,-79.330278,Bloor Danforth,April,12-3PM,4,13,2019
-2150,2019-04-23,14:40,Tuesday,YORK UNIVERSITY STATIO,EUDO,8,11,S,YU,5516,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,April,12-3PM,4,14,2019
+2150,2019-04-23,14:40,Tuesday,YORK UNIVERSITY STATION,EUDO,8,11,S,YU,5516,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,April,12-3PM,4,14,2019
 2151,2019-04-23,15:19,Tuesday,SHEPPARD WEST STATION,TUO,4,7,S,YU,5466,Transportation Department - Other,43.749444,-79.461944,Yonge University Spadina,April,3-6PM,4,15,2019
 2152,2019-04-23,16:31,Tuesday,KIPLING STATION,TUMVS,5,7,W,BD,5012,Operator Violated Signal,43.637222,-79.536111,Bloor Danforth,April,3-6PM,4,16,2019
 2153,2019-04-23,23:06,Tuesday,UNION STATION,PUTIJ,3,7,S,YU,5926,Insulated Joint Related Problem,43.645556,-79.380556,Yonge University Spadina,April,9PM-1:30AM,4,23,2019
@@ -2553,7 +2553,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 2552,2019-05-15,7:14,Wednesday,KENNEDY SRT STATION,MRD,3,8,N,SRT,3027,Door Problems - Passenger Related,43.7325,-79.263611,Scarborough Rail Transit,May,5-9AM,5,7,2019
 2553,2019-05-15,8:13,Wednesday,SUMMERHILL STATION,MUI,9,11,S,YU,6106,Injured or ill Customer (On Train) - Transported,43.682222,-79.390833,Yonge University Spadina,May,5-9AM,5,8,2019
 2554,2019-05-15,9:08,Wednesday,CHESTER STATION,TUMVS,8,10,E,BD,5029,Operator Violated Signal,43.678333,-79.3525,Bloor Danforth,May,9AM-12PM,5,9,2019
-2555,2019-05-15,10:17,Wednesday,YORK UNIVERSITY STATIO,SUDP,3,6,N,YU,6001,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,9AM-12PM,5,10,2019
+2555,2019-05-15,10:17,Wednesday,YORK UNIVERSITY STATION,SUDP,3,6,N,YU,6001,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,9AM-12PM,5,10,2019
 2556,2019-05-15,10:55,Wednesday,KENNEDY SRT STATION,ERCO,5,10,N,SRT,3027,Couplers,43.7325,-79.263611,Scarborough Rail Transit,May,9AM-12PM,5,10,2019
 2557,2019-05-15,11:10,Wednesday,WILSON STATION,MUSAN,5,8,S,YU,5981,Unsanitary Vehicle,43.734167,-79.45,Yonge University Spadina,May,9AM-12PM,5,11,2019
 2558,2019-05-15,11:58,Wednesday,YONGE BLOOR YUS STATION,TUCC,4,7,S,YU,5421,Transit Control Related Problems,#N/A,#N/A,Yonge University Spadina,May,9AM-12PM,5,11,2019
@@ -2567,7 +2567,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 2566,2019-05-15,18:27,Wednesday,FINCH STATION,MUIR,3,5,S,YU,5932,Injured or ill Customer (On Train) - Medical Aid Refused,43.780556,-79.414722,Yonge University Spadina,May,6-9PM,5,18,2019
 2567,2019-05-15,20:22,Wednesday,KENNEDY SRT STATION,TRO,10,15,N,SRT,6023,Transportation Department - Other,43.7325,-79.263611,Scarborough Rail Transit,May,6-9PM,5,20,2019
 2568,2019-05-15,21:08,Wednesday,WOODBINE STATION,SUDP,6,10,E,BD,5029,Disorderly Patron,43.686389,-79.312778,Bloor Danforth,May,9PM-1:30AM,5,21,2019
-2569,2019-05-15,21:22,Wednesday,YORK UNIVERSITY STATIO,SUDP,5,10,S,YU,5961,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,9PM-1:30AM,5,21,2019
+2569,2019-05-15,21:22,Wednesday,YORK UNIVERSITY STATION,SUDP,5,10,S,YU,5961,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,9PM-1:30AM,5,21,2019
 2570,2019-05-16,0:15,Thursday,DUPONT STATION,SUDP,4,9,S,YU,5396,Disorderly Patron,43.674584,-79.40683,Yonge University Spadina,May,9PM-1:30AM,5,0,2019
 2571,2019-05-16,5:44,Thursday,WILSON STATION,MUO,3,0,S,YU,5426,Miscellaneous Other,43.734167,-79.45,Yonge University Spadina,May,5-9AM,5,5,2019
 2572,2019-05-16,6:04,Thursday,GREENWOOD STATION,MUCL,4,8,E,BD,5254,Divisional Clerk Related,43.6825,-79.330278,Bloor Danforth,May,5-9AM,5,6,2019
@@ -2921,7 +2921,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 2920,2019-06-01,8:25,Saturday,VAUGHAN MC STATION,TUS,6,11,S,YU,5816,Crew Unable to Maintain Schedule,43.794167,-79.5275,Yonge University Spadina,June,5-9AM,6,8,2019
 2921,2019-06-01,9:27,Saturday,VAUGHAN MC STATION,MUTO,8,13,S,YU,5426,Misc. Transportation Other - Employee Non-Chargeable,43.794167,-79.5275,Yonge University Spadina,June,9AM-12PM,6,9,2019
 2922,2019-06-01,10:34,Saturday,EGLINTON STATION,MUTO,3,8,S,YU,5421,Misc. Transportation Other - Employee Non-Chargeable,43.705833,-79.398333,Yonge University Spadina,June,9AM-12PM,6,10,2019
-2923,2019-06-01,11:03,Saturday,YORK UNIVERSITY STATIO,MUATC,3,7,S,YU,5636,ATC Project,43.774167,-79.499722,Yonge University Spadina,June,9AM-12PM,6,11,2019
+2923,2019-06-01,11:03,Saturday,YORK UNIVERSITY STATION,MUATC,3,7,S,YU,5636,ATC Project,43.774167,-79.499722,Yonge University Spadina,June,9AM-12PM,6,11,2019
 2924,2019-06-01,11:13,Saturday,ST GEORGE BD STATION,EUBK,14,18,W,BD,5131,Brakes,43.668056, -79.399722,Bloor Danforth,June,9AM-12PM,6,11,2019
 2925,2019-06-01,13:28,Saturday,SHERBOURNE STATION,MUDD,6,10,W,BD,5110,Door Problems - Debris Related,43.672222,-79.376389,Bloor Danforth,June,12-3PM,6,13,2019
 2926,2019-06-01,14:03,Saturday,FINCH STATION,EUTRD,3,6,S,YU,5781,TR Cab Doors,43.780556,-79.414722,Yonge University Spadina,June,12-3PM,6,14,2019
@@ -3888,7 +3888,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 3887,2019-07-22,12:46,Monday,KEELE STATION,SUUT,6,9,W,BD,5204,Unauthorized at Track Level,43.655556,-79.459722,Bloor Danforth,July,12-3PM,7,12,2019
 3888,2019-07-22,14:59,Monday,KIPLING STATION,MUTO,4,7,E,BD,5222,Misc. Transportation Other - Employee Non-Chargeable,43.637222,-79.536111,Bloor Danforth,July,12-3PM,7,14,2019
 3889,2019-07-22,15:16,Monday,DAVISVILLE STATION,MUDD,3,5,S,YU,5696,Door Problems - Debris Related,43.697778,-79.397222,Yonge University Spadina,July,3-6PM,7,15,2019
-3890,2019-07-22,18:41,Monday,YORK UNIVERSITY STATIO,SUDP,5,7,N,YU,6086,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,July,6-9PM,7,18,2019
+3890,2019-07-22,18:41,Monday,YORK UNIVERSITY STATION,SUDP,5,7,N,YU,6086,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,July,6-9PM,7,18,2019
 3891,2019-07-22,19:05,Monday,SHEPPARD WEST STATION,TUCC,12,14,S,YU,5771,Transit Control Related Problems,43.749444,-79.461944,Yonge University Spadina,July,6-9PM,7,19,2019
 3892,2019-07-22,19:29,Monday,DOWNSVIEW PARK STATION,EUBK,4,6,S,YU,5601,Brakes,43.753889,-79.478333,Yonge University Spadina,July,6-9PM,7,19,2019
 3893,2019-07-22,20:02,Monday,KING STATION,EUBK,7,10,N,YU,6121,Brakes,43.649167,-79.377778,Yonge University Spadina,July,6-9PM,7,20,2019
@@ -4189,7 +4189,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4188,2019-08-08,12:34,Thursday,KENNEDY BD STATION,EUDO,3,6,W,BD,5275,Door Problems - Faulty Equipment,43.73255,-79.26361,Bloor Danforth,August,12-3PM,8,12,2019
 4189,2019-08-08,14:25,Thursday,RUNNYMEDE STATION,MUDD,5,8,W,BD,5149,Door Problems - Debris Related,43.651667,-79.475833,Bloor Danforth,August,12-3PM,8,14,2019
 4190,2019-08-08,16:40,Thursday,YORKDALE STATION,MUATC,5,8,S,YU,5781,ATC Project,43.724722,-79.4475,Yonge University Spadina,August,3-6PM,8,16,2019
-4191,2019-08-08,19:33,Thursday,YORK UNIVERSITY STATIO,MUPAA,6,9,N,YU,5896,Passenger Assistance Alarm Activated - No Trouble Found,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,19,2019
+4191,2019-08-08,19:33,Thursday,YORK UNIVERSITY STATION,MUPAA,6,9,N,YU,5896,Passenger Assistance Alarm Activated - No Trouble Found,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,19,2019
 4192,2019-08-09,6:23,Friday,WILSON STATION,MUATC,5,8,S,YU,5976,ATC Project,43.734167,-79.45,Yonge University Spadina,August,5-9AM,8,6,2019
 4193,2019-08-09,7:32,Friday,SPADINA BD STATION,MUIR,4,6,W,BD,5370,Injured or ill Customer (On Train) - Medical Aid Refused,43.667222, -79.403889,Bloor Danforth,August,5-9AM,8,7,2019
 4194,2019-08-09,7:34,Friday,CASTLE FRANK STATION,MUD,7,9,W,BD,5036,Door Problems - Passenger Related,43.673611,-79.368889,Bloor Danforth,August,5-9AM,8,7,2019
@@ -4342,8 +4342,8 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4341,2019-08-16,23:02,Friday,KIPLING STATION,MUIR,10,14,E,BD,5243,Injured or ill Customer (On Train) - Medical Aid Refused,43.637222,-79.536111,Bloor Danforth,August,9PM-1:30AM,8,23,2019
 4342,2019-08-16,23:03,Friday,BAY STATION,MUD,4,8,E,BD,5293,Door Problems - Passenger Related,43.670278,-79.39,Bloor Danforth,August,9PM-1:30AM,8,23,2019
 4343,2019-08-17,0:11,Saturday,WILSON STATION,EUBK,5,10,N,YU,5696,Brakes,43.734167,-79.45,Yonge University Spadina,August,9PM-1:30AM,8,0,2019
-4344,2019-08-17,1:14,Saturday,YORK UNIVERSITY STATIO,SUDP,5,10,S,YU,5986,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,1,2019
-4345,2019-08-17,1:14,Saturday,YORK UNIVERSITY STATIO,SUDP,5,10,S,YU,5986,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,1,2019
+4344,2019-08-17,1:14,Saturday,YORK UNIVERSITY STATION,SUDP,5,10,S,YU,5986,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,1,2019
+4345,2019-08-17,1:14,Saturday,YORK UNIVERSITY STATION,SUDP,5,10,S,YU,5986,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,1,2019
 4346,2019-08-17,5:44,Saturday,KIPLING STATION,MUCL,5,10,E,BD,5055,Divisional Clerk Related,43.637222,-79.536111,Bloor Danforth,August,5-9AM,8,5,2019
 4347,2019-08-17,6:10,Saturday,DAVISVILLE STATION,TUCC,5,10,S,YU,5416,Transit Control Related Problems,43.697778,-79.397222,Yonge University Spadina,August,5-9AM,8,6,2019
 4348,2019-08-17,9:04,Saturday,BESSARION STATION,PUSTS,3,8,E,SHP,6141,Signals - Train Stops,43.769167,-79.376389,Sheppard,August,9AM-12PM,8,9,2019
@@ -4399,7 +4399,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4398,2019-08-20,8:59,Tuesday,YORK MILLS STATION,TUOS,4,6,S,YU,5726,Operator Overshot Platform,43.744167,-79.406667,Yonge University Spadina,August,5-9AM,8,8,2019
 4399,2019-08-20,9:18,Tuesday,QUEEN'S PARK STATION,MUIR,8,10,S,YU,5886,Injured or ill Customer (On Train) - Medical Aid Refused,43.66,-79.390556,Yonge University Spadina,August,9AM-12PM,8,9,2019
 4400,2019-08-20,9:48,Tuesday,COXWELL STATION,TUNIP,3,6,W,BD,5151,Operator Not In Position,43.684167,-79.323056,Bloor Danforth,August,9AM-12PM,8,9,2019
-4401,2019-08-20,10:09,Tuesday,YORK UNIVERSITY STATIO,MUSAN,8,10,S,YU,5806,Unsanitary Vehicle,43.774167,-79.499722,Yonge University Spadina,August,9AM-12PM,8,10,2019
+4401,2019-08-20,10:09,Tuesday,YORK UNIVERSITY STATION,MUSAN,8,10,S,YU,5806,Unsanitary Vehicle,43.774167,-79.499722,Yonge University Spadina,August,9AM-12PM,8,10,2019
 4402,2019-08-20,12:44,Tuesday,BATHURST STATION,SUAP,3,6,W,BD,5239,Assault / Patron Involved,43.666111,-79.411111,Bloor Danforth,August,12-3PM,8,12,2019
 4403,2019-08-20,13:02,Tuesday,SHEPPARD-YONGE SHP STATION,TUO,3,8,E,SHP,6191,Transportation Department - Other,#N/A,#N/A,Sheppard,August,12-3PM,8,13,2019
 4404,2019-08-20,14:30,Tuesday,YORK MILLS STATION,TUSC,4,7,S,YU,5441,Operator Overspeeding,43.744167,-79.406667,Yonge University Spadina,August,12-3PM,8,14,2019
@@ -4470,7 +4470,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4469,2019-08-23,17:02,Friday,KIPLING STATION,TUMVS,12,15,W,BD,5090,Operator Violated Signal,43.637222,-79.536111,Bloor Danforth,August,3-6PM,8,17,2019
 4470,2019-08-23,17:18,Friday,LANSDOWNE STATION,EUPI,3,6,E,BD,5215,Propulsion System,43.659167,-79.442778,Bloor Danforth,August,3-6PM,8,17,2019
 4471,2019-08-23,18:20,Friday,WARDEN STATION,TUO,6,9,E,BD,5299,Transportation Department - Other,43.711389,-79.279722,Bloor Danforth,August,6-9PM,8,18,2019
-4472,2019-08-23,19:50,Friday,YORK UNIVERSITY STATIO,EUBK,4,7,S,YU,5991,Brakes,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,19,2019
+4472,2019-08-23,19:50,Friday,YORK UNIVERSITY STATION,EUBK,4,7,S,YU,5991,Brakes,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,19,2019
 4473,2019-08-23,20:00,Friday,UNION STATION,MUIS,5,8,N,YU,6091,Injured or ill Customer (In Station) - Transported,43.645556,-79.380556,Yonge University Spadina,August,6-9PM,8,20,2019
 4474,2019-08-23,21:57,Friday,DON MILLS STATION,SUCOL,11,16,W,SHP,6146,Collector Booth Alarm Activated,43.775556,-79.346389,Sheppard,August,9PM-1:30AM,8,21,2019
 4475,2019-08-23,22:11,Friday,KENNEDY BD STATION,MUTO,5,9,W,BD,5128,Misc. Transportation Other - Employee Non-Chargeable,43.73255,-79.26361,Bloor Danforth,August,9PM-1:30AM,8,22,2019
@@ -4526,7 +4526,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4525,2019-08-27,19:30,Tuesday,KIPLING STATION,MUTO,3,6,E,BD,5073,Misc. Transportation Other - Employee Non-Chargeable,43.637222,-79.536111,Bloor Danforth,August,6-9PM,8,19,2019
 4526,2019-08-27,21:30,Tuesday,VAUGHAN MC STATION,MUTO,4,8,S,YU,5476,Misc. Transportation Other - Employee Non-Chargeable,43.794167,-79.5275,Yonge University Spadina,August,9PM-1:30AM,8,21,2019
 4527,2019-08-27,22:00,Tuesday,FINCH WEST STATION,EUDO,3,7,S,YU,5936,Door Problems - Faulty Equipment,43.765278,-79.491111,Yonge University Spadina,August,9PM-1:30AM,8,22,2019
-4528,2019-08-27,22:05,Tuesday,YORK UNIVERSITY STATIO,EUCD,3,7,S,YU,5936,Consequential Delay (2nd Delay Same Fault),43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,22,2019
+4528,2019-08-27,22:05,Tuesday,YORK UNIVERSITY STATION,EUCD,3,7,S,YU,5936,Consequential Delay (2nd Delay Same Fault),43.774167,-79.499722,Yonge University Spadina,August,9PM-1:30AM,8,22,2019
 4529,2019-08-28,0:33,Wednesday,DUPONT STATION,SUDP,7,12,S,YU,5496,Disorderly Patron,43.674584,-79.40683,Yonge University Spadina,August,9PM-1:30AM,8,0,2019
 4530,2019-08-28,6:31,Wednesday,WARDEN STATION,EUDO,3,6,E,BD,5307,Door Problems - Faulty Equipment,43.711389,-79.279722,Bloor Danforth,August,5-9AM,8,6,2019
 4531,2019-08-28,6:39,Wednesday,SCARBOROUGH CTR STATIO,MRTO,8,13,N,SRT,3001,Timeout,43.774444,-79.257778,Scarborough Rail Transit,August,5-9AM,8,6,2019
@@ -4598,7 +4598,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4597,2019-09-02,21:48,Monday,COLLEGE STATION,SUDP,3,8,S,YU,5771,Disorderly Patron,43.661389,-79.383056,Yonge University Spadina,September,9PM-1:30AM,9,21,2019
 4598,2019-09-03,5:51,Tuesday,SHEPPARD WEST STATION,MUATC,5,0,N,YU,5661,ATC Project,43.749444,-79.461944,Yonge University Spadina,September,5-9AM,9,5,2019
 4599,2019-09-03,7:15,Tuesday,ROSEDALE STATION,MUD,3,5,S,YU,6106,Door Problems - Passenger Related,43.676944,-79.388889,Yonge University Spadina,September,5-9AM,9,7,2019
-4600,2019-09-03,7:51,Tuesday,YORK UNIVERSITY STATIO,EUDO,3,7,N,YU,5621,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,September,5-9AM,9,7,2019
+4600,2019-09-03,7:51,Tuesday,YORK UNIVERSITY STATION,EUDO,3,7,N,YU,5621,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,September,5-9AM,9,7,2019
 4601,2019-09-03,7:59,Tuesday,ST GEORGE BD STATION,MUIS,14,16,W,BD,5183,Injured or ill Customer (In Station) - Transported,43.668056, -79.399722,Bloor Danforth,September,5-9AM,9,7,2019
 4602,2019-09-03,8:10,Tuesday,SUMMERHILL STATION,MUI,7,9,S,YU,5436,Injured or ill Customer (On Train) - Transported,43.682222,-79.390833,Yonge University Spadina,September,5-9AM,9,8,2019
 4603,2019-09-03,8:14,Tuesday,OSSINGTON STATION,MUPAA,4,6,E,BD,5308,Passenger Assistance Alarm Activated - No Trouble Found,43.662222,-79.426667,Bloor Danforth,September,5-9AM,9,8,2019
@@ -4832,7 +4832,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4831,2019-09-18,18:38,Wednesday,UNION STATION,TUMVS,3,5,N,YU,6611,Operator Violated Signal,43.645556,-79.380556,Yonge University Spadina,September,6-9PM,9,18,2019
 4832,2019-09-18,20:40,Wednesday,WOODBINE STATION,MUIR,3,6,W,BD,5126,Injured or ill Customer (On Train) - Medical Aid Refused,43.686389,-79.312778,Bloor Danforth,September,6-9PM,9,20,2019
 4833,2019-09-18,22:10,Wednesday,NORTH YORK CTR STATION,MUIR,10,15,N,YU,5531,Injured or ill Customer (On Train) - Medical Aid Refused,43.768333,-79.412778,Yonge University Spadina,September,9PM-1:30AM,9,22,2019
-4834,2019-09-18,23:01,Wednesday,YORK UNIVERSITY STATIO,MUATC,3,8,S,YU,5976,ATC Project,43.774167,-79.499722,Yonge University Spadina,September,9PM-1:30AM,9,23,2019
+4834,2019-09-18,23:01,Wednesday,YORK UNIVERSITY STATION,MUATC,3,8,S,YU,5976,ATC Project,43.774167,-79.499722,Yonge University Spadina,September,9PM-1:30AM,9,23,2019
 4835,2019-09-19,0:31,Thursday,MCCOWAN STATION,MRTO,11,16,S,SRT,3013,Timeout,43.774917,-79.251667,Scarborough Rail Transit,September,9PM-1:30AM,9,0,2019
 4836,2019-09-19,0:42,Thursday,VAUGHAN MC STATION,MUTO,5,10,S,YU,5511,Misc. Transportation Other - Employee Non-Chargeable,43.794167,-79.5275,Yonge University Spadina,September,9PM-1:30AM,9,0,2019
 4837,2019-09-19,0:44,Thursday,LAWRENCE STATION,PUTWZ,13,18,N,YU,5636,Work Zone Problems - Track,43.725,-79.402222,Yonge University Spadina,September,9PM-1:30AM,9,0,2019
@@ -4861,7 +4861,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 4860,2019-09-19,21:05,Thursday,EGLINTON STATION,EUNT,4,7,N,YU,5716,Equipment - No Trouble Found,43.705833,-79.398333,Yonge University Spadina,September,9PM-1:30AM,9,21,2019
 4861,2019-09-19,22:12,Thursday,COLLEGE STATION,MUPAA,4,9,N,YU,5676,Passenger Assistance Alarm Activated - No Trouble Found,43.661389,-79.383056,Yonge University Spadina,September,9PM-1:30AM,9,22,2019
 4862,2019-09-19,22:16,Thursday,ST CLAIR STATION,MUPAA,4,9,N,YU,5391,Passenger Assistance Alarm Activated - No Trouble Found,43.687778,-79.393056,Yonge University Spadina,September,9PM-1:30AM,9,22,2019
-4863,2019-09-19,23:12,Thursday,YORK UNIVERSITY STATIO,EUBK,5,10,S,YU,5976,Brakes,43.774167,-79.499722,Yonge University Spadina,September,9PM-1:30AM,9,23,2019
+4863,2019-09-19,23:12,Thursday,YORK UNIVERSITY STATION,EUBK,5,10,S,YU,5976,Brakes,43.774167,-79.499722,Yonge University Spadina,September,9PM-1:30AM,9,23,2019
 4864,2019-09-20,2:00,Friday,YORK MILLS STATION,SUUT,11,16,N,YU,6086,Unauthorized at Track Level,43.744167,-79.406667,Yonge University Spadina,September,9PM-1:30AM,9,2,2019
 4865,2019-09-20,5:31,Friday,FINCH STATION,TUCC,4,0,S,YU,6081,Transit Control Related Problems,43.780556,-79.414722,Yonge University Spadina,September,5-9AM,9,5,2019
 4866,2019-09-20,5:44,Friday,GREENWOOD STATION,EUTL,10,14,E,BD,5256,Trainline System,43.6825,-79.330278,Bloor Danforth,September,5-9AM,9,5,2019
@@ -5122,7 +5122,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 5121,2019-10-03,14:31,Thursday,ISLINGTON STATION,SUAP,4,7,E,BD,5195,Assault / Patron Involved,43.645278,-79.524444,Bloor Danforth,October,12-3PM,10,14,2019
 5122,2019-10-03,14:42,Thursday,ST CLAIR WEST STATION,MUTO,4,7,N,YU,6101,Misc. Transportation Other - Employee Non-Chargeable,43.683888,-79.415113,Yonge University Spadina,October,12-3PM,10,14,2019
 5123,2019-10-03,16:43,Thursday,WARDEN STATION,PUSTC,3,5,E,BD,5168,Signals - Track Circuit Problems,43.711389,-79.279722,Bloor Danforth,October,3-6PM,10,16,2019
-5124,2019-10-03,16:47,Thursday,YORK UNIVERSITY STATIO,MUI,6,8,S,YU,5651,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,October,3-6PM,10,16,2019
+5124,2019-10-03,16:47,Thursday,YORK UNIVERSITY STATION,MUI,6,8,S,YU,5651,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,October,3-6PM,10,16,2019
 5125,2019-10-03,17:14,Thursday,ST ANDREW STATION,MUPAA,3,5,N,YU,6106,Passenger Assistance Alarm Activated - No Trouble Found,43.647778,-79.384722,Yonge University Spadina,October,3-6PM,10,17,2019
 5126,2019-10-03,17:29,Thursday,ST GEORGE YUS STATION,MUIR,3,5,N,YU,5216,Injured or ill Customer (On Train) - Medical Aid Refused,43.66806,-79.39972,Yonge University Spadina,October,3-6PM,10,17,2019
 5127,2019-10-03,17:31,Thursday,OSGOODE STATION,PUSRA,6,8,S,YU,5676,Subway Radio System Fault ,43.650833,-79.386667,Yonge University Spadina,October,3-6PM,10,17,2019
@@ -5331,7 +5331,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 5330,2019-10-16,16:14,Wednesday,ISLINGTON STATION,MUIR,3,5,E,BD,5138,Injured or ill Customer (On Train) - Medical Aid Refused,43.645278,-79.524444,Bloor Danforth,October,3-6PM,10,16,2019
 5331,2019-10-16,16:34,Wednesday,VAUGHAN MC STATION,TUNIP,3,6,S,YU,5666,Operator Not In Position,43.794167,-79.5275,Yonge University Spadina,October,3-6PM,10,16,2019
 5332,2019-10-16,16:41,Wednesday,FINCH STATION,TUSC,3,5,S,YU,5756,Operator Overspeeding,43.780556,-79.414722,Yonge University Spadina,October,3-6PM,10,16,2019
-5333,2019-10-16,17:23,Wednesday,YORK UNIVERSITY STATIO,SUDP,5,7,N,YU,5711,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,October,3-6PM,10,17,2019
+5333,2019-10-16,17:23,Wednesday,YORK UNIVERSITY STATION,SUDP,5,7,N,YU,5711,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,October,3-6PM,10,17,2019
 5334,2019-10-16,17:58,Wednesday,BAY STATION,MUPAA,3,5,E,BD,5301,Passenger Assistance Alarm Activated - No Trouble Found,43.670278,-79.39,Bloor Danforth,October,3-6PM,10,17,2019
 5335,2019-10-16,19:11,Wednesday,YONGE BLOOR YUS STATION,SUDP,4,7,N,YU,5406,Disorderly Patron,#N/A,#N/A,Yonge University Spadina,October,6-9PM,10,19,2019
 5336,2019-10-17,1:22,Thursday,EGLINTON STATION,MUTO,6,11,N,YU,5641,Misc. Transportation Other - Employee Non-Chargeable,43.705833,-79.398333,Yonge University Spadina,October,9PM-1:30AM,10,1,2019
@@ -7622,7 +7622,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 7621,2018-02-14,5:46,Wednesday,WILSON STATION,MUCL,5,8,S,YU,6026,Divisional Clerk Related,43.734167,-79.45,Yonge University Spadina,February,5-9AM,2,5,2018
 7622,2018-02-14,5:53,Wednesday,GREENWOOD STATION,TUNOA,4,8,E,BD,0,No Operator Immediately Available ,43.6825,-79.330278,Bloor Danforth,February,5-9AM,2,5,2018
 7623,2018-02-14,5:59,Wednesday,VAUGHAN MC STATION,TUO,5,9,S,YU,6091,Transportation Department - Other,43.794167,-79.5275,Yonge University Spadina,February,5-9AM,2,5,2018
-7624,2018-02-14,8:06,Wednesday,YORK UNIVERSITY STATIO,SUUT,32,36,S,YU,5441,Unauthorized at Track Level,43.774167,-79.499722,Yonge University Spadina,February,5-9AM,2,8,2018
+7624,2018-02-14,8:06,Wednesday,YORK UNIVERSITY STATION,SUUT,32,36,S,YU,5441,Unauthorized at Track Level,43.774167,-79.499722,Yonge University Spadina,February,5-9AM,2,8,2018
 7625,2018-02-14,8:17,Wednesday,MUSEUM STATION,TUO,3,5,S,YU,6111,Transportation Department - Other,43.667222,-79.393611,Yonge University Spadina,February,5-9AM,2,8,2018
 7626,2018-02-14,8:27,Wednesday,ST GEORGE BD STATION,MUDD,4,8,W,BD,5329,Door Problems - Debris Related,43.668056, -79.399722,Bloor Danforth,February,5-9AM,2,8,2018
 7627,2018-02-14,8:29,Wednesday,KENNEDY SRT STATION,ERDO,6,12,N,SRT,3002,Door Problems - Faulty Equipment,43.7325,-79.263611,Scarborough Rail Transit,February,5-9AM,2,8,2018
@@ -7676,7 +7676,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 7675,2018-02-16,17:55,Friday,KENNEDY BD STATION,EUPI,3,5,W,BD,5182,Propulsion System,43.73255,-79.26361,Bloor Danforth,February,3-6PM,2,17,2018
 7676,2018-02-16,18:28,Friday,WARDEN STATION,PUTIJ,14,16,E,BD,5303,Insulated Joint Related Problem,43.711389,-79.279722,Bloor Danforth,February,6-9PM,2,18,2018
 7677,2018-02-16,19:19,Friday,VAUGHAN MC STATION,MUWR,8,10,S,YU,5836,Work Refusal,43.794167,-79.5275,Yonge University Spadina,February,6-9PM,2,19,2018
-7678,2018-02-16,21:17,Friday,YORK UNIVERSITY STATIO,MUI,8,13,S,YU,6046,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,February,9PM-1:30AM,2,21,2018
+7678,2018-02-16,21:17,Friday,YORK UNIVERSITY STATION,MUI,8,13,S,YU,6046,Injured or ill Customer (On Train) - Transported,43.774167,-79.499722,Yonge University Spadina,February,9PM-1:30AM,2,21,2018
 7679,2018-02-16,23:17,Friday,COXWELL STATION,MUI,15,19,W,BD,5003,Injured or ill Customer (On Train) - Transported,43.684167,-79.323056,Bloor Danforth,February,9PM-1:30AM,2,23,2018
 7680,2018-02-16,23:42,Friday,KIPLING STATION,MUIR,6,10,E,BD,5025,Injured or ill Customer (On Train) - Medical Aid Refused,43.637222,-79.536111,Bloor Danforth,February,9PM-1:30AM,2,23,2018
 7681,2018-02-17,0:59,Saturday,WILSON STATION,MUSAN,4,8,S,YU,5576,Unsanitary Vehicle,43.734167,-79.45,Yonge University Spadina,February,9PM-1:30AM,2,0,2018
@@ -7848,7 +7848,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 7847,2018-02-26,16:01,Monday,VAUGHAN MC STATION,EUPI,3,6,S,YU,5841,Propulsion System,43.794167,-79.5275,Yonge University Spadina,February,3-6PM,2,16,2018
 7848,2018-02-26,16:10,Monday,WILSON STATION,MUTO,3,6,N,YU,6051,Misc. Transportation Other - Employee Non-Chargeable,43.734167,-79.45,Yonge University Spadina,February,3-6PM,2,16,2018
 7849,2018-02-26,16:22,Monday,OLD MILL STATION,MUSC,3,5,E,BD,5301,Miscellaneous Speed Control,43.65,-79.494722,Bloor Danforth,February,3-6PM,2,16,2018
-7850,2018-02-26,16:42,Monday,YORK UNIVERSITY STATIO,SUUT,4,6,N,YU,6061,Unauthorized at Track Level,43.774167,-79.499722,Yonge University Spadina,February,3-6PM,2,16,2018
+7850,2018-02-26,16:42,Monday,YORK UNIVERSITY STATION,SUUT,4,6,N,YU,6061,Unauthorized at Track Level,43.774167,-79.499722,Yonge University Spadina,February,3-6PM,2,16,2018
 7851,2018-02-26,18:53,Monday,SUMMERHILL STATION,MUI,7,9,N,YU,5781,Injured or ill Customer (On Train) - Transported,43.682222,-79.390833,Yonge University Spadina,February,6-9PM,2,18,2018
 7852,2018-02-26,18:56,Monday,ST CLAIR WEST STATION,EUBK,6,9,S,YU,5411,Brakes,43.683888,-79.415113,Yonge University Spadina,February,6-9PM,2,18,2018
 7853,2018-02-26,22:00,Monday,VICTORIA PARK STATION,TUMVS,5,9,W,BD,5208,Operator Violated Signal,43.695,-79.288611,Bloor Danforth,February,9PM-1:30AM,2,22,2018
@@ -8475,7 +8475,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 8474,2018-04-02,8:09,Monday,DUPONT STATION,MUI,5,7,S,YU,5956,Injured or ill Customer (On Train) - Transported,43.674584,-79.40683,Yonge University Spadina,April,5-9AM,4,8,2018
 8475,2018-04-02,12:28,Monday,WILSON STATION,PUSTS,8,11,S,YU,5916,Signals - Train Stops,43.734167,-79.45,Yonge University Spadina,April,12-3PM,4,12,2018
 8476,2018-04-02,16:02,Monday,ST GEORGE BD STATION,MUSC,3,5,E,BD,5000,Miscellaneous Speed Control,43.668056, -79.399722,Bloor Danforth,April,3-6PM,4,16,2018
-8477,2018-04-02,17:23,Monday,YORK UNIVERSITY STATIO,TUATC,3,5,S,YU,5671,ATC Operator Related,43.774167,-79.499722,Yonge University Spadina,April,3-6PM,4,17,2018
+8477,2018-04-02,17:23,Monday,YORK UNIVERSITY STATION,TUATC,3,5,S,YU,5671,ATC Operator Related,43.774167,-79.499722,Yonge University Spadina,April,3-6PM,4,17,2018
 8478,2018-04-02,18:38,Monday,DAVISVILLE STATION,EUBO,3,5,S,YU,6051,Body,43.697778,-79.397222,Yonge University Spadina,April,6-9PM,4,18,2018
 8479,2018-04-02,19:12,Monday,FINCH STATION,MUSC,3,5,N,YU,5716,Miscellaneous Speed Control,43.780556,-79.414722,Yonge University Spadina,April,6-9PM,4,19,2018
 8480,2018-04-02,19:24,Monday,BAYVIEW STATION,SUDP,5,11,W,SHP,6156,Disorderly Patron,43.766944,-79.386667,Sheppard,April,6-9PM,4,19,2018
@@ -8764,7 +8764,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 8763,2018-04-19,17:08,Thursday,ST CLAIR STATION,MUIR,6,8,N,YU,5711,Injured or ill Customer (On Train) - Medical Aid Refused,43.687778,-79.393056,Yonge University Spadina,April,3-6PM,4,17,2018
 8764,2018-04-19,17:24,Thursday,RUNNYMEDE STATION,SUDP,3,5,W,BD,5012,Disorderly Patron,43.651667,-79.475833,Bloor Danforth,April,3-6PM,4,17,2018
 8765,2018-04-19,17:36,Thursday,KENNEDY BD STATION,EUDO,9,12,W,BD,5079,Door Problems - Faulty Equipment,43.73255,-79.26361,Bloor Danforth,April,3-6PM,4,17,2018
-8766,2018-04-19,18:37,Thursday,YORK UNIVERSITY STATIO,EUDO,3,5,S,YU,6096,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,April,6-9PM,4,18,2018
+8766,2018-04-19,18:37,Thursday,YORK UNIVERSITY STATION,EUDO,3,5,S,YU,6096,Door Problems - Faulty Equipment,43.774167,-79.499722,Yonge University Spadina,April,6-9PM,4,18,2018
 8767,2018-04-19,19:50,Thursday,SHEPPARD WEST STATION,EUYRD,3,6,S,YU,5641,Yard/Carhouse Related Problems,43.749444,-79.461944,Yonge University Spadina,April,6-9PM,4,19,2018
 8768,2018-04-19,21:38,Thursday,BESSARION STATION,TUMVS,3,8,E,SHP,6151,Operator Violated Signal,43.769167,-79.376389,Sheppard,April,9PM-1:30AM,4,21,2018
 8769,2018-04-19,22:05,Thursday,UNION STATION,MUI,11,16,N,YU,6041,Injured or ill Customer (On Train) - Transported,43.645556,-79.380556,Yonge University Spadina,April,9PM-1:30AM,4,22,2018
@@ -8877,7 +8877,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 8876,2018-04-26,17:35,Thursday,YORK MILLS STATION,TUMVS,3,6,N,YU,5816,Operator Violated Signal,43.744167,-79.406667,Yonge University Spadina,April,3-6PM,4,17,2018
 8877,2018-04-26,17:36,Thursday,SPADINA BD STATION,MUD,6,8,W,BD,5284,Door Problems - Passenger Related,43.667222, -79.403889,Bloor Danforth,April,3-6PM,4,17,2018
 8878,2018-04-26,17:50,Thursday,KENNEDY BD STATION,MUIR,3,5,W,BD,5324,Injured or ill Customer (On Train) - Medical Aid Refused,43.73255,-79.26361,Bloor Danforth,April,3-6PM,4,17,2018
-8879,2018-04-26,19:43,Thursday,YORK UNIVERSITY STATIO,SUG,7,11,S,YU,5996,Graffiti / Scratchiti,43.774167,-79.499722,Yonge University Spadina,April,6-9PM,4,19,2018
+8879,2018-04-26,19:43,Thursday,YORK UNIVERSITY STATION,SUG,7,11,S,YU,5996,Graffiti / Scratchiti,43.774167,-79.499722,Yonge University Spadina,April,6-9PM,4,19,2018
 8880,2018-04-26,20:07,Thursday,JANE STATION,MUPR1,30,33,E,BD,5068,Priority One - Train in Contact With Person,43.649917,-79.483889,Bloor Danforth,April,6-9PM,4,20,2018
 8881,2018-04-26,22:17,Thursday,MAIN STREET STATION,PUSTC,3,7,W,BD,5044,Signals - Track Circuit Problems,43.689028,-79.301667,Bloor Danforth,April,9PM-1:30AM,4,22,2018
 8882,2018-04-27,1:01,Friday,KENNEDY BD STATION,MUTO,3,7,W,BD,5014,Misc. Transportation Other - Employee Non-Chargeable,43.73255,-79.26361,Bloor Danforth,April,9PM-1:30AM,4,1,2018
@@ -9344,7 +9344,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 9343,2018-05-21,8:58,Monday,KENNEDY BD STATION,MUTO,4,8,W,BD,5366,Misc. Transportation Other - Employee Non-Chargeable,43.73255,-79.26361,Bloor Danforth,May,5-9AM,5,8,2018
 9344,2018-05-21,11:40,Monday,YONGE BLOOR YUS STATION,TUS,5,10,N,YU,5751,Crew Unable to Maintain Schedule,43.67111,-79.38583,Yonge University Spadina,May,9AM-12PM,5,11,2018
 9345,2018-05-21,13:43,Monday,KIPLING STATION,MUTO,3,8,E,BD,5038,Misc. Transportation Other - Employee Non-Chargeable,43.637222,-79.536111,Bloor Danforth,May,12-3PM,5,13,2018
-9346,2018-05-21,15:33,Monday,YORK UNIVERSITY STATIO,SUDP,3,7,S,YU,5536,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,3-6PM,5,15,2018
+9346,2018-05-21,15:33,Monday,YORK UNIVERSITY STATION,SUDP,3,7,S,YU,5536,Disorderly Patron,43.774167,-79.499722,Yonge University Spadina,May,3-6PM,5,15,2018
 9347,2018-05-21,18:44,Monday,SHEPPARD-YONGE SHP STATION,TUMVS,6,12,W,SHP,6151,Operator Violated Signal,43.761389,-79.410833,Sheppard,May,6-9PM,5,18,2018
 9348,2018-05-21,19:33,Monday,LAWRENCE STATION,SUUT,11,16,N,YU,5861,Unauthorized at Track Level,43.725,-79.402222,Yonge University Spadina,May,6-9PM,5,19,2018
 9349,2018-05-21,20:12,Monday,YORK MILLS STATION,TUOS,5,10,S,YU,5866,Operator Overshot Platform,43.744167,-79.406667,Yonge University Spadina,May,6-9PM,5,20,2018
@@ -10442,7 +10442,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 10441,2018-07-12,14:32,Thursday,FINCH STATION,EUBO,3,6,S,YU,5971,Body,43.780556,-79.414722,Yonge University Spadina,July,12-3PM,7,14,2018
 10442,2018-07-12,14:43,Thursday,WILSON STATION,MUNOA,3,6,N,YU,0,No Operator Immediately Available - Not E.S.A. Related ,43.734167,-79.45,Yonge University Spadina,July,12-3PM,7,14,2018
 10443,2018-07-12,15:24,Thursday,KIPLING STATION,MUCL,3,5,E,BD,0,Divisional Clerk Related,43.637222,-79.536111,Bloor Danforth,July,3-6PM,7,15,2018
-10444,2018-07-12,17:27,Thursday,YORK UNIVERSITY STATIO,EUBK,3,6,S,YU,5446,Brakes,43.774167,-79.499722,Yonge University Spadina,July,3-6PM,7,17,2018
+10444,2018-07-12,17:27,Thursday,YORK UNIVERSITY STATION,EUBK,3,6,S,YU,5446,Brakes,43.774167,-79.499722,Yonge University Spadina,July,3-6PM,7,17,2018
 10445,2018-07-12,17:57,Thursday,WILSON STATION,MUNOA,3,6,N,YU,0,No Operator Immediately Available - Not E.S.A. Related ,43.734167,-79.45,Yonge University Spadina,July,3-6PM,7,17,2018
 10446,2018-07-12,18:06,Thursday,DUFFERIN STATION,MUIR,5,7,W,BD,5163,Injured or ill Customer (On Train) - Medical Aid Refused,43.66,-79.435556,Bloor Danforth,July,6-9PM,7,18,2018
 10447,2018-07-12,18:57,Thursday,ST CLAIR WEST STATION,TUMVS,3,6,N,YU,5846,Operator Violated Signal,43.683888,-79.415113,Yonge University Spadina,July,6-9PM,7,18,2018
@@ -10486,7 +10486,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 10485,2018-07-14,16:20,Saturday,ST CLAIR STATION,EUBK,5,10,N,YU,5511,Brakes,43.687778,-79.393056,Yonge University Spadina,July,3-6PM,7,16,2018
 10486,2018-07-14,17:18,Saturday,ST CLAIR STATION,EUME,5,10,N,YU,5976,RC&S Maintenance Error - (Human),43.687778,-79.393056,Yonge University Spadina,July,3-6PM,7,17,2018
 10487,2018-07-14,18:25,Saturday,WOODBINE STATION,SUDP,4,8,E,BD,5252,Disorderly Patron,43.686389,-79.312778,Bloor Danforth,July,6-9PM,7,18,2018
-10488,2018-07-14,18:56,Saturday,YORK UNIVERSITY STATIO,EUBO,6,11,N,YU,6021,Body,43.774167,-79.499722,Yonge University Spadina,July,6-9PM,7,18,2018
+10488,2018-07-14,18:56,Saturday,YORK UNIVERSITY STATION,EUBO,6,11,N,YU,6021,Body,43.774167,-79.499722,Yonge University Spadina,July,6-9PM,7,18,2018
 10489,2018-07-14,23:10,Saturday,FINCH STATION,MUNOA,5,10,,YU,0,No Operator Immediately Available - Not E.S.A. Related ,43.780556,-79.414722,Yonge University Spadina,July,9PM-1:30AM,7,23,2018
 10490,2018-07-15,1:08,Sunday,SHEPPARD WEST STATION,MUATC,5,10,N,YU,5721,ATC Project,43.749444,-79.461944,Yonge University Spadina,July,9PM-1:30AM,7,1,2018
 10491,2018-07-15,7:38,Sunday,WILSON STATION,MUESA,5,10,S,YU,0,No Operator Immediately Available,43.734167,-79.45,Yonge University Spadina,July,5-9AM,7,7,2018
@@ -10602,7 +10602,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 10601,2018-07-19,0:25,Thursday,SHEPPARD WEST STATION,MUATC,3,8,N,YU,5636,ATC Project,43.749444,-79.461944,Yonge University Spadina,July,9PM-1:30AM,7,0,2018
 10602,2018-07-19,5:58,Thursday,KEELE STATION,PUSTS,5,10,W,BD,5108,Signals - Train Stops,43.655556,-79.459722,Bloor Danforth,July,5-9AM,7,5,2018
 10603,2018-07-19,6:02,Thursday,SHEPPARD WEST STATION,MUO,7,18,N,YU,6821,Miscellaneous Other,43.749444,-79.461944,Yonge University Spadina,July,5-9AM,7,6,2018
-10604,2018-07-19,7:20,Thursday,YORK UNIVERSITY STATIO,SUG,4,8,S,YU,5711,Graffiti / Scratchiti,43.774167,-79.499722,Yonge University Spadina,July,5-9AM,7,7,2018
+10604,2018-07-19,7:20,Thursday,YORK UNIVERSITY STATION,SUG,4,8,S,YU,5711,Graffiti / Scratchiti,43.774167,-79.499722,Yonge University Spadina,July,5-9AM,7,7,2018
 10605,2018-07-19,8:47,Thursday,SUMMERHILL STATION,MUIR,3,5,S,YU,5906,Injured or ill Customer (On Train) - Medical Aid Refused,43.682222,-79.390833,Yonge University Spadina,July,5-9AM,7,8,2018
 10606,2018-07-19,9:18,Thursday,MIDLAND STATION,MRPAA,3,8,S,SRT,3018,Passenger Assistance Alarm Activated - No Trouble Found,43.770417,-79.271944,Scarborough Rail Transit,July,9AM-12PM,7,9,2018
 10607,2018-07-19,9:21,Thursday,WARDEN STATION,MUIR,5,8,W,BD,5120,Injured or ill Customer (On Train) - Medical Aid Refused,43.711389,-79.279722,Bloor Danforth,July,9AM-12PM,7,9,2018
@@ -11378,7 +11378,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 11377,2018-08-22,18:57,Wednesday,YONGE BLOOR YUS STATION,PUSNT,17,19,S,YU,5976,Signal Problem - No Trouble,43.67111,-79.38583,Yonge University Spadina,August,6-9PM,8,18,2018
 11378,2018-08-22,20:12,Wednesday,CASTLE FRANK STATION,SUDP,3,6,E,BD,5286,Disorderly Patron,43.673611,-79.368889,Bloor Danforth,August,6-9PM,8,20,2018
 11379,2018-08-22,20:41,Wednesday,LAWRENCE WEST STATION,SUEAS,14,17,N,YU,5731,Emergency Alarm Station Activation,43.715833,-79.444167,Yonge University Spadina,August,6-9PM,8,20,2018
-11380,2018-08-22,20:52,Wednesday,YORK UNIVERSITY STATIO,MUD,7,10,N,YU,5386,Door Problems - Passenger Related,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,20,2018
+11380,2018-08-22,20:52,Wednesday,YORK UNIVERSITY STATION,MUD,7,10,N,YU,5386,Door Problems - Passenger Related,43.774167,-79.499722,Yonge University Spadina,August,6-9PM,8,20,2018
 11381,2018-08-22,23:11,Wednesday,BAY STATION,MUIS,4,8,E,BD,5154,Injured or ill Customer (In Station) - Transported,43.670278,-79.39,Bloor Danforth,August,9PM-1:30AM,8,23,2018
 11382,2018-08-22,23:14,Wednesday,ST GEORGE YUS STATION,SUUT,12,17,N,YU,5981,Unauthorized at Track Level,43.66806,-79.39972,Yonge University Spadina,August,9PM-1:30AM,8,23,2018
 11383,2018-08-22,23:17,Wednesday,CHRISTIE STATION,SUO,5,10,W,BD,5204,Passenger Other,43.664167,-79.418333,Bloor Danforth,August,9PM-1:30AM,8,23,2018
@@ -11796,7 +11796,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 11795,2018-09-13,8:58,Thursday,BAY STATION,SUO,3,5,E,BD,5070,Passenger Other,43.670278,-79.39,Bloor Danforth,September,5-9AM,9,8,2018
 11796,2018-09-13,10:52,Thursday,EGLINTON STATION,MUTO,6,8,N,YU,6076,Misc. Transportation Other - Employee Non-Chargeable,43.705833,-79.398333,Yonge University Spadina,September,9AM-12PM,9,10,2018
 11797,2018-09-13,11:04,Thursday,MCCOWAN STATION,ERTC,6,12,S,SRT,3009,Train Control - VOBC,43.774917,-79.251667,Scarborough Rail Transit,September,9AM-12PM,9,11,2018
-11798,2018-09-13,11:08,Thursday,YORK UNIVERSITY STATIO,MUATC,5,8,S,YU,5826,ATC Project,43.774167,-79.499722,Yonge University Spadina,September,9AM-12PM,9,11,2018
+11798,2018-09-13,11:08,Thursday,YORK UNIVERSITY STATION,MUATC,5,8,S,YU,5826,ATC Project,43.774167,-79.499722,Yonge University Spadina,September,9AM-12PM,9,11,2018
 11799,2018-09-13,11:57,Thursday,CHRISTIE STATION,SUDP,6,9,W,BD,5251,Disorderly Patron,43.664167,-79.418333,Bloor Danforth,September,9AM-12PM,9,11,2018
 11800,2018-09-13,14:20,Thursday,DUNDAS WEST STATION,MUIR,13,16,E,BD,5336,Injured or ill Customer (On Train) - Medical Aid Refused,43.656944,-79.452917,Bloor Danforth,September,12-3PM,9,14,2018
 11801,2018-09-13,15:36,Thursday,OLD MILL STATION,PUTIJ,5,7,W,BD,5239,Insulated Joint Related Problem,43.65,-79.494722,Bloor Danforth,September,3-6PM,9,15,2018
@@ -12282,7 +12282,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 12281,2018-10-10,17:32,Wednesday,SPADINA BD STATION,EUBK,3,5,E,BD,5146,Brakes,43.667222, -79.403889,Bloor Danforth,October,3-6PM,10,17,2018
 12282,2018-10-10,18:20,Wednesday,SHERBOURNE STATION,MUI,5,7,E,BD,5269,Injured or ill Customer (On Train) - Transported,43.672222,-79.376389,Bloor Danforth,October,6-9PM,10,18,2018
 12283,2018-10-10,18:44,Wednesday,DUNDAS WEST STATION,SUDP,5,7,W,BD,5052,Disorderly Patron,43.656944,-79.452917,Bloor Danforth,October,6-9PM,10,18,2018
-12284,2018-10-10,20:36,Wednesday,YORK UNIVERSITY STATIO,MUPAA,5,8,N,YU,6121,Passenger Assistance Alarm Activated - No Trouble Found,43.774167,-79.499722,Yonge University Spadina,October,6-9PM,10,20,2018
+12284,2018-10-10,20:36,Wednesday,YORK UNIVERSITY STATION,MUPAA,5,8,N,YU,6121,Passenger Assistance Alarm Activated - No Trouble Found,43.774167,-79.499722,Yonge University Spadina,October,6-9PM,10,20,2018
 12285,2018-10-11,0:53,Thursday,WARDEN STATION,PUSTS,5,10,W,BD,5305,Signals - Train Stops,43.711389,-79.279722,Bloor Danforth,October,9PM-1:30AM,10,0,2018
 12286,2018-10-11,1:47,Thursday,VAUGHAN MC STATION,MUI,10,15,N,YU,5861,Injured or ill Customer (On Train) - Transported,43.794167,-79.5275,Yonge University Spadina,October,9PM-1:30AM,10,1,2018
 12287,2018-10-11,6:46,Thursday,SHEPPARD WEST STATION,MUATC,4,8,N,YU,5816,ATC Project,43.749444,-79.461944,Yonge University Spadina,October,5-9AM,10,6,2018
@@ -12516,7 +12516,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 12515,2018-10-22,23:55,Monday,KENNEDY BD STATION,TUS,5,10,W,BD,5107,Crew Unable to Maintain Schedule,43.73255,-79.26361,Bloor Danforth,October,9PM-1:30AM,10,23,2018
 12516,2018-10-23,0:41,Tuesday,VICTORIA PARK STATION,MUPAA,3,8,W,BD,5085,Passenger Assistance Alarm Activated - No Trouble Found,43.695,-79.288611,Bloor Danforth,October,9PM-1:30AM,10,0,2018
 12517,2018-10-23,0:44,Tuesday,DUNDAS STATION,MUO,4,9,N,YU,6001,Miscellaneous Other,43.656389,-79.380833,Yonge University Spadina,October,9PM-1:30AM,10,0,2018
-12518,2018-10-23,2:29,Tuesday,YORK UNIVERSITY STATIO,MUATC,10,15,N,YU,5886,ATC Project,43.774167,-79.499722,Yonge University Spadina,October,9PM-1:30AM,10,2,2018
+12518,2018-10-23,2:29,Tuesday,YORK UNIVERSITY STATION,MUATC,10,15,N,YU,5886,ATC Project,43.774167,-79.499722,Yonge University Spadina,October,9PM-1:30AM,10,2,2018
 12519,2018-10-23,5:34,Tuesday,BESSARION STATION,EUPI,15,20,E,SHP,6191,Propulsion System,43.769167,-79.376389,Sheppard,October,5-9AM,10,5,2018
 12520,2018-10-23,6:16,Tuesday,SHEPPARD WEST STATION,MUNOA,3,7,N,YU,0,No Operator Immediately Available - Not E.S.A. Related ,43.749444,-79.461944,Yonge University Spadina,October,5-9AM,10,6,2018
 12521,2018-10-23,6:29,Tuesday,SHEPPARD WEST STATION,MUATC,4,8,N,YU,5706,ATC Project,43.749444,-79.461944,Yonge University Spadina,October,5-9AM,10,6,2018
@@ -13185,7 +13185,7 @@ id,date,time,day,station,code,min_delay,min_gap,bound,line,vehicle,code_info,lat
 13184,2018-11-29,6:20,Thursday,WILSON STATION,TUMVS,3,8,S,YU,5951,Operator Violated Signal,43.734167,-79.45,Yonge University Spadina,November,5-9AM,11,6,2018
 13185,2018-11-29,6:42,Thursday,BROADVIEW STATION,MUD,4,6,W,BD,5066,Door Problems - Passenger Related,43.676944,-79.358333,Bloor Danforth,November,5-9AM,11,6,2018
 13186,2018-11-29,7:20,Thursday,DUFFERIN STATION,EUDO,3,5,W,BD,5109,Door Problems - Faulty Equipment,43.66,-79.435556,Bloor Danforth,November,5-9AM,11,7,2018
-13187,2018-11-29,7:32,Thursday,YORK UNIVERSITY STATIO,PUSCR,5,9,S,YU,5976,Subway Car Radio Fault ,43.774167,-79.499722,Yonge University Spadina,November,5-9AM,11,7,2018
+13187,2018-11-29,7:32,Thursday,YORK UNIVERSITY STATION,PUSCR,5,9,S,YU,5976,Subway Car Radio Fault ,43.774167,-79.499722,Yonge University Spadina,November,5-9AM,11,7,2018
 13188,2018-11-29,7:42,Thursday,FINCH WEST STATION,PUSCR,4,8,S,YU,5976,Subway Car Radio Fault ,43.765278,-79.491111,Yonge University Spadina,November,5-9AM,11,7,2018
 13189,2018-11-29,7:51,Thursday,KENNEDY SRT STATION,MRD,3,8,N,SRT,3023,Door Problems - Passenger Related,43.7325,-79.263611,Scarborough Rail Transit,November,5-9AM,11,7,2018
 13190,2018-11-29,8:42,Thursday,RUNNYMEDE STATION,MUDD,4,6,E,BD,5212,Door Problems - Debris Related,43.651667,-79.475833,Bloor Danforth,November,5-9AM,11,8,2018
