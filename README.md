@@ -36,9 +36,9 @@ We will use the following:
 3. 	TTC Operating Statistics: https://www.ttc.ca/About_the_TTC/Operating_Statistics/2018/index.jsp
 
 ## **Screenshot:**
-![screenshot1.jpg](Dashboard Screenshots/Screenshot1.JPG)
-![screenshot2.jpg](Dashboard Screenshots/Screenshot2.JPG)
-![screenshot3.jpg](Dashboard Screenshots/Screenshot3.JPG)
-![screenshot4.jpg](Dashboard Screenshots/Screenshot4.JPG)
-![screenshot5.jpg](Dashboard Screenshots/Screenshot5.JPG)
-![screenshot6.jpg](Dashboard Screenshots/Screenshot6.JPG)
+![screenshot1.jpg](Screenshots/Screenshot1.JPG)
+![screenshot2.jpg](Screenshots/Screenshot2.JPG)
+![screenshot3.jpg](Screenshots/Screenshot3.JPG)
+![screenshot4.jpg](Screenshots/Screenshot4.JPG)
+![screenshot5.jpg](Screenshots/Screenshot5.JPG)
+![screenshot6.jpg](Screenshots/Screenshot6.JPG)
