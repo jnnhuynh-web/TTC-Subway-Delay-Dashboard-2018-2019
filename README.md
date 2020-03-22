@@ -1,4 +1,4 @@
-# Toronto Transit Commission (TTC) Subway Delays 2018 and 2019
+# Toronto Transit Commission (TTC) Subway Delays
 
 ## **Team Members:**
 - Nadia Iskandar
@@ -11,19 +11,19 @@ We will create an interactive dashboard to display TTC subway delay 2018 and 201
 
 1.	Leaflet Map
 	- Map of Toronto and TTC subway stations
-	- Popups (on hover) displaying the name of the subway station, subway line, total number of delays in 2018, total number of delays in 2019, average minimum delay in 2018, and average minimum delay in 2019
-2.	D3 bar graph
-	- X-Axis1: Time of day 
-	- X-Axis2: Day of week 
-	- Y-Axis1: Average number of subway delays 
-	- Y-Axis2: Average minimum delay 
-	- Dropdown filters: Subway line and month
-3.	Other Tableau visualizations to be embedded into HTML page - quick facts
-4. 	Machine learning prediction results - predict the probability of delays at a certain time. 
+	- Popups (on hover) displaying the name of the subway station, total number of delays in 2019, average delay time in 2019, total number of delays in 2018, and average delay time in 2018
+2.	Predictions
+	- Dropdown filters: Subway line, station, direction, month, day of the week, and hour
+	- Average delay time based on 2018 and 2019 data
+	- Average wait time based on 2018 and 2019 data
+3.	Tableau Dashboard 
+	- Key facts about the TTC
+	- Analysis of subway delays by hour, day of the week, and month
+	- Analysis of subway delays by reason
 
 ## **Tools:**
 We will use the following:
-1. Python - Pandas, SQLAlchemy, Flask, Scikit-learn
+1. Python - Pandas, SQLAlchemy, Flask
 2. AWS PostgreSQL
 3. HTML/CSS
 4. JavaScript - Leaflet, D3
