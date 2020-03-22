@@ -1,6 +1,5 @@
 // Define url
 var url = "/delay";
-var url2 = "/map"
 
 // Create function to calculate average
 function average(arr){
@@ -21,6 +20,11 @@ function average(arr){
 	}
 };
 
+// Create function to get unique values
+function unique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+
 // Select filters
 var line_filter = d3.select("#line_filter");
 var station_filter = d3.select("#station_filter");
@@ -38,33 +42,31 @@ function init(){
 
     // Add options to line_filter dropdown
     var subway_lines = ['All','Bloor Danforth','Scarborough Rail Transit','Sheppard','Yonge University Spadina'];
-    subway_lines.forEach(subway_line=>line_filter.append("option").text(subway_line).attr("id","subway_line"));
+    subway_lines.forEach(subway_line=>line_filter.append("option").text(subway_line));
 
     // Add options to station_filter dropdown
-    d3.json(url2).then(function(data){
-        var stations = [];
-        data.forEach(data=>stations.push(data.station));
+    d3.json(url).then(function(data){
+        var stations = data.map(data=>data.station).filter(unique);
         stations.sort();
         stations.unshift('All');
-        
-        stations.forEach(station=>station_filter.append("option").text(station).attr("id","station"));
+        stations.forEach(station=>station_filter.append("option").text(station));
         });
 
     // Add options to direction_filter dropdown
     var directions = ["All","N","S","E","W"];
-    directions.forEach(direction=>direction_filter.append("option").text(direction).attr("id","direction"));
+    directions.forEach(direction=>direction_filter.append("option").text(direction));
 
     // Add options to month_filter dropdown
     var months = ['All','January','February','March','April','May','June','July','August','September','October','November','December'];
-    months.forEach(month=>month_filter.append("option").text(month).attr("id","month"));
+    months.forEach(month=>month_filter.append("option").text(month));
 
  // Add options to day_filter dropdown
     var days = ['All','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
-    days.forEach(day=>day_filter.append("option").text(day).attr("id","day")); 
+    days.forEach(day=>day_filter.append("option").text(day)); 
 
        // Add options to hour_filter dropdown
     var hours = ['All',0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
-    hours.forEach(hour=>hour_filter.append("option").text(hour).attr("id","hour"));
+    hours.forEach(hour=>hour_filter.append("option").text(hour));
 	
 	// Get data from api
 	d3.json(url).then(function(data){

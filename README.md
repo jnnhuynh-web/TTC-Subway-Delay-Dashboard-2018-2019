@@ -34,3 +34,11 @@ We will use the following:
 1.	City of Toronto Open Data - TTC monthly subway delay data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
 2.	Wikipedia (multiple web pages) - TTC subway station coordinates (e.g. Bloor-Yonge station: https://en.wikipedia.org/wiki/Bloor%E2%80%93Yonge_station)
 3. 	TTC Operating Statistics: https://www.ttc.ca/About_the_TTC/Operating_Statistics/2018/index.jsp
+
+## **Screenshot:**
+![screenshot1.jpg](Dashboard Screenshots/Screenshot1.JPG)
+![screenshot2.jpg](Dashboard Screenshots/Screenshot2.JPG)
+![screenshot3.jpg](Dashboard Screenshots/Screenshot3.JPG)
+![screenshot4.jpg](Dashboard Screenshots/Screenshot4.JPG)
+![screenshot5.jpg](Dashboard Screenshots/Screenshot5.JPG)
+![screenshot6.jpg](Dashboard Screenshots/Screenshot6.JPG)
