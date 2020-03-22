@@ -68,22 +68,35 @@
 
         <br>
 
-        <!-- The div that holds the D3 graph and filters -->
-        <div class="row">
-            <div class="col-md-3 well">
-                <h3><a id="predict">Predictions</a></h3>
-                <h5>Subway Line:</h5>
-                <select id="subway_filter" onchange="optionChanged(this.value)"></select>
-                <h5>Year:</h5>
-                <select id="year_filter" onchange="optionChanged(this.value)"></select>
-                <h5>Month:</h5>
-                <select id="month_filter" onchange="optionChanged(this.value)"></select>
-            </div>
-
-            <div class="col-md-9">
-                <div id="graph"></div>
-            </div>
+        <!-- The div that holds the predictions and filters -->
+        <div class="col-md-4 well">
+            <h5>Subway Line:</h5>
+            <select id="line_filter" onchange="optionChanged(this.value)"></select>
+            <h5>Station:</h5>
+            <select id="station_filter" onchange="optionChanged(this.value)"></select>
+            <h5>Direction:</h5>
+            <select id="direction_filter" onchange="optionChanged(this.value)"></select>
         </div>
+        <div class="col-md-4 well">
+            <h5>Month:</h5>
+            <select id="month_filter" onchange="optionChanged(this.value)"></select>
+            <h5>Day:</h5>
+            <select id="day_filter" onchange="optionChanged(this.value)"></select>
+            <h5>Hour:</h5>
+            <select id="hour_filter" onchange="optionChanged(this.value)"></select>   
+        </div>  
+        <div class="col-md-4 well">
+            <h5>Predictions:</h5>
+            <br>
+            <p><strong>Average Delay Time (Minutes):</strong></p>
+            <p id="delay_prediction"></p>
+            <br>
+            <p><strong>Average Wait Time (Minutes):</strong></p>
+            <p id="gap_prediction"></p>
+        </div>      
+        
+        <br>
+
         <div class='tableauPlaceholder' id='viz1584809559611' style='position: relative'>
             <h3><a id="stats"></a></h3>
             <noscript>
@@ -128,9 +141,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="../static/js/config.js"></script>
-
     <script src="../static/js/map2.js"></script>
-    <!-- <script src="../static/js/graph.js"></script> -->
+    <script src="../static/js/historical_average.js"></script>
 
 </body>
 
