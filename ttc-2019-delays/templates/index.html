@@ -69,31 +69,33 @@
         <br>
 
         <!-- The div that holds the predictions and filters -->
-        <div class="col-md-4 well">
-            <h5>Subway Line:</h5>
-            <select id="line_filter" onchange="optionChanged(this.value)"></select>
-            <h5>Station:</h5>
-            <select id="station_filter" onchange="optionChanged(this.value)"></select>
-            <h5>Direction:</h5>
-            <select id="direction_filter" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="col-md-4 well">
-            <h5>Month:</h5>
-            <select id="month_filter" onchange="optionChanged(this.value)"></select>
-            <h5>Day of the Week:</h5>
-            <select id="day_filter" onchange="optionChanged(this.value)"></select>
-            <h5>Hour:</h5>
-            <select id="hour_filter" onchange="optionChanged(this.value)"></select>   
-        </div>  
-        <div class="col-md-4 well">
-            <h5>Predictions:</h5>
-            <br>
-            <p><strong>Average Delay Time (Minutes):</strong></p>
-            <p id="delay_prediction"></p>
-            <br>
-            <p><strong>Average Wait Time (Minutes):</strong></p>
-            <p id="gap_prediction"></p>
-        </div>      
+        <div id="predict">
+            <div class="col-md-4 well">
+                <h5>Subway Line:</h5>
+                <select id="line_filter" onchange="optionChanged(this.value)"></select>
+                <h5>Station:</h5>
+                <select id="station_filter" onchange="optionChanged(this.value)"></select>
+                <h5>Direction:</h5>
+                <select id="direction_filter" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="col-md-4 well">
+                <h5>Month:</h5>
+                <select id="month_filter" onchange="optionChanged(this.value)"></select>
+                <h5>Day of the Week:</h5>
+                <select id="day_filter" onchange="optionChanged(this.value)"></select>
+                <h5>Hour:</h5>
+                <select id="hour_filter" onchange="optionChanged(this.value)"></select>   
+            </div>  
+            <div class="col-md-4 well">
+                <h5>Predictions:</h5>
+                <br>
+                <p><strong>Average Delay Time (Minutes):</strong></p>
+                <p id="delay_prediction"></p>
+                <br>
+                <p><strong>Average Wait Time (Minutes):</strong></p>
+                <p id="gap_prediction"></p>
+            </div>  
+        </div>    
         
         <br>
 

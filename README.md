@@ -7,7 +7,7 @@
 - Jennifer Huynh
 
 ## **Project Description/Outline:**
-We will create an interactive dashboard to display TTC subway delay 2018 and 2019 data. Our dashboard will contain the following views:
+We will create an interactive dashboard to display TTC subway delay 2018 and 2019 data. Our dashboard will contain the following information:
 
 1.	Leaflet Map
 	- Map of Toronto and TTC subway stations
@@ -33,4 +33,4 @@ We will use the following:
 ## **Data Sources:**
 1.	City of Toronto Open Data - TTC monthly subway delay data: https://open.toronto.ca/dataset/ttc-subway-delay-data/
 2.	Wikipedia (multiple web pages) - TTC subway station coordinates (e.g. Bloor-Yonge station: https://en.wikipedia.org/wiki/Bloor%E2%80%93Yonge_station)
-3. 	TTC Operating Statistics - quick facts: https://www.ttc.ca/About_the_TTC/Operating_Statistics/2018/index.jsp
+3. 	TTC Operating Statistics: https://www.ttc.ca/About_the_TTC/Operating_Statistics/2018/index.jsp
