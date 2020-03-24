@@ -14,8 +14,8 @@ We will create an interactive dashboard to display TTC subway delay 2018 and 201
 	- Popups (on hover) displaying the name of the subway station, total number of delays in 2019, average delay time in 2019, total number of delays in 2018, and average delay time in 2018
 2.	Predictions
 	- Dropdown filters: Subway line, station, direction, month, day of the week, and hour
-	- Average delay time based on 2018 and 2019 data
-	- Average wait time based on 2018 and 2019 data
+	- Average delay time 
+	- Average wait time 
 3.	Tableau Dashboard 
 	- Key facts about the TTC
 	- Analysis of subway delays by hour, day of the week, and month
