@@ -40,7 +40,7 @@ body {
 .jumbotron {
   position: relative;
   height: 350px;
-  background-image: url("../images/station2.jpg");
+  background-image: url("https://raw.githubusercontent.com/jnnhuynh-web/TTC-Subway-Delay-Dashboard-2018-2019/master/ttc-2019-delays/static/images/station2.JPG");
   background-size: cover;
 }
 
@@ -50,7 +50,7 @@ body {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/station2.jpg");
+  background-image: url("https://raw.githubusercontent.com/jnnhuynh-web/TTC-Subway-Delay-Dashboard-2018-2019/master/ttc-2019-delays/static/images/station2.JPG");
   /* background-attachment: fixed;
   background-position: bottom center; */
   background-size: cover;
